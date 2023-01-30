@@ -1,0 +1,237 @@
+/*-------------------- shared --------------------*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    font-family: Arial;
+    background-image: url(../images/background_img.jpg);
+    background-position: fixed;
+}
+
+/*-------------------- top_nav --------------------*/
+.top{
+    background-color: #fff;
+    display: flex;
+    height: 150px;
+    align-items: center;
+}
+
+.top .top_logo{
+    display: block;
+    width: 195.73px;
+    height: 120px;
+    margin-left: 40px;
+    
+}
+
+.top ul{
+    display: flex;
+}
+
+.top ul li{
+    font-size: 24px;
+    margin-left: 48px;
+    font-weight: bold;
+}
+
+.top li a{
+    display: block;
+    text-decoration: none;
+    color: #9D8E7E;
+}
+
+.top ul li:last-child{
+    justify-self: flex-end;
+}
+
+.top .login{
+    color: #9D8E7E;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    justify-items: right;
+    margin-left: auto;
+    margin-right: 48px;
+    font-weight: bold;
+}
+
+.top a:hover{
+    color: #FFB7B7;
+    transition: .5s;
+}
+
+/* giving_up_banner */
+.giving_up_banner{
+    background-image: url(../images/giving_up_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+    min-height: 900px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.giving_up_banner h1{
+    font-size: 100px;
+    color: #FEF8EA;
+    font-weight: bold;
+    margin-left: 120px;
+    margin-top: 70px;
+    line-height: 1;
+}
+
+.giving_up_banner h2{
+    font-size: 56px;
+    color: #FEF8EA;
+    font-weight: bold;
+    margin-left: 120px;
+    line-height: 1.2;
+}
+
+.giving_up_banner .giving_up_banner_pinkline{
+    display: block;
+    background-color: #FFB7B7;
+    width: 380px;
+    height: 5px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+/*-------------------- breadcrumb --------------------*/
+.breadcrumb{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.breadcrumb ul{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.breadcrumb li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumb li:first-child a{
+    color: #655004;
+}
+
+.breadcrumb li a:hover{
+    color: #FFB7B7;
+    transition: .5s;
+}
+
+/* giving_up_announcement */
+.giving_up_announcement{
+    width: 900px;
+    height: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* padding-top: 20px;
+    padding-left: 50px; */
+    position: relative;
+}
+
+.giving_up_announcement_content{
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.giving_up_announcement_content h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+/* login_register */
+.login_register{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.login_register img{
+    width: 550px;
+    height: 360px;
+}
+
+.login_register a{
+    display: block;
+    width: 125px;
+    height: 35px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.login_register a:hover{
+    color: #fff;
+    background-color: #9D8E7E;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+/*-------------------- bottom --------------------*/
+.bottom{
+    /* width: 100vw; */
+    height: 70px;
+    background-color: #fff;
+    margin-top: 530px;
+    padding-left: 25px;
+    align-items: center;
+    display: flex;
+}
+
+.bottom .bottom_left{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.bottom .bottom_left i{
+    font-size: 24px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: #655004;
+}
+
+.bottom .bottom_right{
+    width: 100vw;
+}
+
+.bottom .bottom_right ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.bottom .bottom_right li a{
+    text-decoration: none;
+    color: #655004;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.bottom_left i:hover, .bottom_right li a:hover{
+    color: #FFB7B7;
+    transition: .5s;
+}

@@ -1,0 +1,245 @@
+/*-------------------- shared --------------------*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    font-family: Arial;
+    background-image: url(../images/background_img.jpg);
+    background-position: fixed;
+}
+
+/*-------------------- top_nav --------------------*/
+.top{
+    background-color: #fff;
+    display: flex;
+    height: 150px;
+    align-items: center;
+}
+
+.top .top_logo{
+    display: block;
+    width: 195.73px;
+    height: 120px;
+    margin-left: 40px;
+    
+}
+
+.top ul{
+    display: flex;
+}
+
+.top ul li{
+    font-size: 24px;
+    margin-left: 48px;
+    font-weight: bold;
+}
+
+.top li a{
+    display: block;
+    text-decoration: none;
+    color: #9D8E7E;
+}
+
+.top ul li:last-child{
+    justify-self: flex-end;
+}
+
+.top .login{
+    color: #9D8E7E;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    justify-items: right;
+    margin-left: auto;
+    margin-right: 48px;
+    font-weight: bold;
+}
+
+.top a:hover{
+    color: #FFB7B7;
+    transition: .5s;
+}
+
+/*-------------------- breadcrumb --------------------*/
+.breadcrumb{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.breadcrumb ul{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.breadcrumb li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumb li:first-child a{
+    color: #655004;
+}
+
+.breadcrumb li a:hover{
+    color: #FFB7B7;
+    transition: .5s;
+}
+
+/* register */
+.register{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.register h1{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: Arial;
+}
+
+/* register_left */
+
+.register .register_left{
+    width: 460px;
+    height: 650px;
+    box-shadow: 0 0 20px 0px #9D8E7E;
+    border-radius: 10px;
+    padding: 60px;
+    text-align: center;
+}
+
+.register .register_left h1{
+    margin-bottom: 10px;
+}
+
+.register .register_left h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.register .register_left h2 a{
+    color: #9D8E7E;
+}
+
+.register .register_left h2 a:hover{
+    color: blue;
+    /* transition: .5s; */
+}
+
+input[type="password"], input[type="email"]{
+    width: 320px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: #D9D9D9;
+    margin-top: 40px;
+    background-color: transparent;
+    padding: 30px;
+}
+
+input[type="password"]::placeholder, input[type="email"]::placeholder{
+    font-size: 18px;
+    color: #D9D9D9;
+}
+
+.register .register_left .login_account{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #9D8E7E;
+    border-radius: 10px;
+    display: block;
+    width: 320px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 70px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+/* register_right */
+.register .register_right{
+    width: 610px;
+    height: 490px;
+    padding: 60px 130px;
+    /* background-color: #fff; */
+}
+
+.register_right_title{
+    width: 350px;
+    margin: 0 auto;
+}
+
+.register_right_title .info_01{
+    margin-top: 70px;
+}
+
+.register_right_title .info_01, .register_right_title .info_02{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #9D8E7E;
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+
+.register_right_title .info_01 i, .register_right_title .info_02 i{
+    font-size: 48px;
+    margin-right: 60px;
+    
+}
+
+/*-------------------- bottom --------------------*/
+.bottom{
+    /* width: 100vw; */
+    height: 70px;
+    background-color: #fff;
+    margin-top: 530px;
+    padding-left: 25px;
+    align-items: center;
+    display: flex;
+}
+
+.bottom .bottom_left{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.bottom .bottom_left i{
+    font-size: 24px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: #9D8E7E;
+}
+
+.bottom .bottom_right{
+    width: 100vw;
+}
+
+.bottom .bottom_right ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.bottom .bottom_right li a{
+    text-decoration: none;
+    color: #9D8E7E;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.bottom_left i:hover, .bottom_right li a:hover{
+    color: #FFB7B7;
+    transition: .5s;
+}
