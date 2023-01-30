@@ -64,7 +64,7 @@ body{
 
 /*-------------------- front_page_banner --------------------*/
 .front_page_banner{
-    background-image: url(/images/front_page_banner1.jpg);
+    background-image: url(../images/front_page_banner1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1920px;
