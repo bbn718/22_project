@@ -121,13 +121,13 @@ body{
     transition: .5s;
 }
 
-/* search_area */
+/*-------------------- search_area --------------------*/
 .search_area{
     width: 900px;
     margin: 0 auto;
 }
 
-/* cat_dog */
+/*-------------------- cat_dog --------------------*/
 .cat_dog{
     width: 200px;
     height: 40px;
@@ -157,7 +157,7 @@ body{
     transition: .5s;
 }
 
-/* search */
+/*-------------------- search --------------------*/
 .search{
     /* margin-left: 515px; */
     margin-top: 20px;
@@ -174,6 +174,7 @@ body{
     background-color: #fff;
     color: #000;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 .select option:first-child{
@@ -200,11 +201,11 @@ body{
     transition: .5s;
 }
 
-/* adopt_announcement */
+/*-------------------- adopt_announcement --------------------*/
 .adopt_announcement{
     margin-top: 30px;
     /* margin-left: 515px; */
-    width: 900px;
+    width: 800px;
     height: 70px;
     background-color: #fff;
     padding: 10px 0;
@@ -214,12 +215,12 @@ body{
     border-radius: 5px;
 }
 
-/* pet_card */
+/*-------------------- pet_card --------------------*/
 .pet_card_area{
     width: calc(95%);
     margin: 0 auto;
     /* border: 1px solid red; */
-    margin-top: 100px;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -293,7 +294,7 @@ body{
     transition: .5s;
 }
 
-/* page_button */
+/*-------------------- page_button --------------------*/
 .page_button{
     width: 600px;
     margin: 0 auto;

@@ -95,7 +95,7 @@ body{
     transition: .5s;
 }
 
-/* news */
+/*-------------------- news --------------------*/
 .news{
     width: 1200px;
     margin: 0 auto;
@@ -143,11 +143,11 @@ body{
     width: 500px;
 }
 
-.news .news_right h2{
+.news .news_right li{
     font-weight: 700;
 }
 
-.news .news_right a{
+.news .news_right .see_more{
     display: block;
     width: 125px;
     height: 35px;
@@ -162,17 +162,47 @@ body{
     font-weight: bold;
 }
 
-.news .news_right a:hover{
+.news .news_right .see_more:hover{
     color: #fff;
     background-color: #9D8E7E;
     transition: .5s;
 }
 
-/* news_release */
+/*-------------------- news_release --------------------*/
+.news_release_right li a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
 
-/* activity */
+.news_release_right li a:hover{
+    background-color: rgba(157, 142, 126, .2);
+}
 
-/* search_announcement */
+.news_release_right li a:visited{
+    /* color: rgba(157, 142, 126, .2); */
+    color: #000;;
+}
+
+/*-------------------- activity --------------------*/
+.activity{
+    font-weight: bold;
+}
+/*-------------------- search_announcement --------------------*/
+.search_announcement a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.search_announcement a:hover{
+    background-color: rgba(157, 142, 126, .2);
+}
+
+.search_announcement a:visited{
+    /* color: rgba(157, 142, 126, .2); */
+    color: #000;
+}
 
 /*-------------------- bottom --------------------*/
 .bottom{

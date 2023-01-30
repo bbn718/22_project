@@ -144,13 +144,35 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 
 .giving_up_announcement_content h2{
     font-size: 20px;
     font-weight: bold;
     color: red;
+}
+
+.agree{
+    display: block;
+    width: 125px;
+    height: 35px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.agree:hover{
+    color: #fff;
+    background-color: #9D8E7E;
+    border-radius: 10px;
+    transition: .5s;
 }
 
 /* login_register */
