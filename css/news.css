@@ -101,6 +101,7 @@ body{
     margin: 0 auto;
     margin-top: 100px;
     display: flex;
+    justify-content: space-between;
 }
 
 .news .rectangle{
@@ -130,7 +131,7 @@ body{
 
 .news .vertical_line{
     display: block;
-    width: 20px;
+    width: 5px;
     height: 410px;
     background-color: #9D8E7E;
     opacity: .2;
@@ -139,6 +140,7 @@ body{
 
 .news .news_right{
     margin-left: 20px;
+    width: 500px;
 }
 
 .news .news_right h2{
