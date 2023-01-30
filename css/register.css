@@ -142,6 +142,7 @@ input[type="password"], input[type="email"]{
     margin-top: 40px;
     background-color: transparent;
     padding: 30px;
+    font-size: 18px;
 }
 
 input[type="password"]::placeholder, input[type="email"]::placeholder{

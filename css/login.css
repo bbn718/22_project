@@ -23,7 +23,6 @@ body{
     width: 195.73px;
     height: 120px;
     margin-left: 40px;
-    
 }
 
 .top ul{
@@ -89,7 +88,7 @@ body{
     transition: .5s;
 }
 
-/* register */
+/*-------------------- register --------------------*/
 .register{
     width: 1200px;
     margin: 0 auto;
@@ -105,7 +104,7 @@ body{
     font-family: Arial;
 }
 
-/* register_left */
+/*-------------------- register_left --------------------*/
 
 .register .register_left{
     width: 460px;
@@ -142,6 +141,7 @@ input[type="password"], input[type="email"]{
     margin-top: 40px;
     background-color: transparent;
     padding: 30px;
+    font-size: 24px;
 }
 
 input[type="password"]::placeholder, input[type="email"]::placeholder{
@@ -166,7 +166,7 @@ input[type="password"]::placeholder, input[type="email"]::placeholder{
     margin-bottom: 50px;
 }
 
-/* register_right */
+/*-------------------- register_right --------------------*/
 .register .register_right{
     width: 610px;
     height: 490px;

@@ -7,6 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/register.css">
+    <script src="/js/jquery-3.6.3.js"></script>
 </head>
 <body>
     
@@ -50,7 +51,7 @@
             <h1>加入StayLove浪愛</h1>
             <input type="email" placeholder="輸入Email">
             <input type="password" placeholder="輸入密碼">
-            <input type="password" placeholder="再次輸入密碼">
+            <input type="password" placeholder="再次輸入密碼" class="re_password">
             <a href="#" class="login_account">註冊帳號</a>
             <h2>已經有帳號了？<a href="login.html">點此登入</a></h2>
         </div>
@@ -97,6 +98,33 @@
 
     </div>
 
+    <script>
+    
+        $(`input[type="email"]`).focus(function(){
+            $(this).attr('placeholder', '')
+        }).blur(function(){
+            if($(this).val() == ''){
+                $(this).attr('placeholder','請輸入Email')
+            }
+        })
+    
+        $(`input[type="password"]`).focus(function(){
+            $(this).attr('placeholder', '')
+        }).blur(function(){
+            if($(this).val() == ''){
+                $(this).attr('placeholder','請輸入密碼')
+            }
+        })
+
+        $(`re_password`).focus(function(){
+            $(this).attr('placeholder', '')
+        }).blur(function(){
+            if($(this).val() == ''){
+                $(this).attr('placeholder','請輸入密碼')
+            }
+        })
+    
+    </script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
 
 </body>

@@ -7,6 +7,8 @@
     <title>contact_us</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/contact_us.css">
+    <script src="/js/jquery-3.6.3.js"></script>
+    
 </head>
 <body>
 
@@ -100,6 +102,41 @@
 
     </div>
 
+    <script>
+        $(`input[type="text"]`).focus(function(){
+            $(this).attr('placeholder', '')
+        }).blur(function(){
+            if($(this).val() == ''){
+                $(this).attr('placeholder','請輸入您的名稱')
+            }
+        })
+
+        $(`input[type="email"]`).focus(function(){
+            $(this).attr('placeholder', '')
+        }).blur(function(){
+            if($(this).val() == ''){
+                $(this).attr('placeholder','請輸入您的電子郵件')
+            }
+        })
+
+        $(`textarea`).focus(function(){
+            $(this).attr('placeholder', '')
+        }).blur(function(){
+            if($(this).val() == ''){
+                $(this).attr('placeholder','請輸入詳細內容')
+            }
+        })
+
+        // $(`textarea`).focus(function(){
+        //     $(this).css({
+        //         width: 500,
+        //         height: 300,
+        //     })
+        // }).blur(function(){
+        //     $(this).css({'width':'400',height:100})
+        // })
+    </script>
+    
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
     
 </body>
