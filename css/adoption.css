@@ -162,16 +162,22 @@ footer p{
     line-height: 30px;
     font-size: 18px;
     font-weight: bold;
-}
-
-.cat_dog ul li:focus{
-    color: #fff;
-    background-color: #9D8E7E;
+    cursor: pointer;
     transition: .5s;
 }
 
+.focus{
+    color: #fff;
+    background-color: #9D8E7E!important;
+    transition: .5s;
+}
+
+.cat_dog ul li:focus{
+    
+}
+
 .display_none{
-    display: none;
+    display: none!important;
 }
 
 /*-------------------- search --------------------*/

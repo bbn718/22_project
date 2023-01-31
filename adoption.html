@@ -191,7 +191,7 @@
             </div>
         </div>
         
-        <div class="pet_card car_card">
+        <div class="pet_card cat_card">
             <span class="rectangle"></span>
             <img src="images/adopt_08.jpg" alt="">
             <span class="vertical_line"></span>
@@ -287,10 +287,34 @@
 
     <script>
         function catBtn(){
-            document.getElementsByClassName('dog_card').classList.add('display_none')
+            var all_dog_card = document.querySelectorAll('.dog_card');
+            var cat_focus = document.querySelector('.cat_dog_cat');
+            for(let i = 0; i < all_dog_card.length; i++){
+                if(all_dog_card[i].classList.contains('display_none')){
+                    all_dog_card[i].classList.remove('display_none');
+                    cat_focus.classList.remove('focus');
+                }else{
+                    all_dog_card[i].classList.add('display_none');
+                    all_dog_card[i].classList.remove('focus');
+                    cat_focus.classList.add('focus');
+                };
+            };
         };
 
-        function dogBtn(){};
+        function dogBtn(){
+            var all_cat_card = document.querySelectorAll('.cat_card');
+            var dog_focus = document.querySelector('.cat_dog_dog');
+            for(let i = 0; i < all_cat_card.length; i++){
+                if(all_cat_card[i].classList.contains('display_none')){
+                    all_cat_card[i].classList.remove('display_none');
+                    dog_focus.classList.remove('focus');
+                }else{
+                    all_cat_card[i].classList.add('display_none');
+                    all_cat_card[i].classList.remove('focus');
+                    dog_focus.classList.add('focus');
+                };
+            };
+        };
     </script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
 

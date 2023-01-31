@@ -64,11 +64,14 @@
 
     </div>
 
-    <a href="publish.html" class="agree">同意</a>
+    <button class="agree" onclick="login_register()">同意</button>
+    <!-- <a href="#" class="agree" onclick="login_register()">同意</a> -->
 
+    <div class="warn">請先登錄或註冊！</div>
     <!-- login_register -->
     <div class="login_register">
 
+        
         <div class="login">
             <img src="images/giving_up_01.jpg" alt="">
             <a href="login.html">登入</a>
@@ -109,8 +112,16 @@
             本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。
         </p> 
     
-        </footer>
+    </footer>
     
+    <script>
+        function login_register(){
+            var display_flex = document.querySelector('.login_register');
+            var display_block = document.querySelector('.warn');
+            display_flex.classList.add('display_flex');
+            display_block.classList.add('display_block');
+        };
+    </script>
 
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
 
