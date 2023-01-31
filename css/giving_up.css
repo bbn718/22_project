@@ -172,9 +172,17 @@ body{
     margin-top: 50px;
     border: none;
     cursor: pointer;
+    transition: .5s;
 }
 
 .agree:hover{
+    color: #fff;
+    background-color: #9D8E7E;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.agree_hover{
     color: #fff;
     background-color: #9D8E7E;
     border-radius: 10px;
