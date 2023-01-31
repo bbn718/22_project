@@ -5,7 +5,7 @@
 
 body{
     line-height: 1.6;
-    font-family: Arial;
+    font-family: 微軟正黑體, Arial;
     background-image: url(../images/background_img.jpg);
     background-position: fixed;
 }
@@ -46,7 +46,7 @@ body{
 }
 
 .top .login{
-    color: #9D8E7E;
+    color: #FFB7B7;
     text-decoration: none;
     font-size: 24px;
     display: block;
@@ -199,6 +199,15 @@ input[type="password"]::placeholder, input[type="email"]::placeholder{
 }
 
 /*-------------------- bottom --------------------*/
+footer{
+    background-color: #fff;
+}
+
+footer p{
+    text-align: center;
+    font-size: 6px;
+}
+
 .bottom{
     /* width: 100vw; */
     height: 70px;

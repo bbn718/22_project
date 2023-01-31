@@ -5,7 +5,7 @@
 
 body{
     line-height: 1.6;
-    font-family: Arial;
+    font-family: 微軟正黑體, Arial;
     background-image: url(../images/background_img.jpg);
     background-position: fixed;
 }
@@ -38,6 +38,10 @@ body{
     font-size: 24px;
     margin-left: 48px;
     font-weight: bold;
+}
+
+.top ul li:nth-child(6) a{
+    color: #FFB7B7;
 }
 
 .top li a{
@@ -97,11 +101,16 @@ body{
 
 /* content */
 .content{
+    position: relative;
+}
+
+.content ul{
     width: 1200px;
     margin: 0 auto;
     margin-top: 150px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .content li h1{
@@ -112,7 +121,7 @@ body{
     font-weight: bold;
 }
 
-.content li a{
+.content li .btn_open{
     display: block;
     color: #000;
     width: 130px;
@@ -122,13 +131,60 @@ body{
     text-align: center;
     line-height: 48px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0 auto;
     margin-top: 850px;
+    border: none;
+    cursor: pointer;
 }
 
-.content li a:hover{
+.container{
+    width: 650px;
+    height: 300px;
+    background-color: #9D8E7E;
+    border-radius: 10px;
+    position: relative;
+    transform: scale(0);
+    transition: .5s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.container p{
+    font-size: 76px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 300px;
+}
+
+.container i{
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.is-active{
+    animation: popup .7s;
+    transform: scale(1);
+}
+
+@keyframes popup{
+    0% {transform: scale(0);}
+    20% {transform: scale(1.1);}
+    50% {transform: scale(0.95);}
+    80% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}
+
+.content li .btn_open:hover{
     color: #fff;
     background-color: #9D8E7E;
     transition: .5s;
@@ -152,6 +208,15 @@ body{
     height: 1000px;
 }
 /*-------------------- bottom --------------------*/
+footer{
+    background-color: #fff;
+}
+
+footer p{
+    text-align: center;
+    font-size: 6px;
+}
+
 .bottom{
     /* width: 100vw; */
     height: 70px;
