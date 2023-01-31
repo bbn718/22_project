@@ -170,6 +170,10 @@ footer p{
     transition: .5s;
 }
 
+.display_none{
+    display: none;
+}
+
 /*-------------------- search --------------------*/
 .search{
     /* margin-left: 515px; */
@@ -232,8 +236,6 @@ footer p{
 .pet_card_area{
     width: calc(95%);
     margin: 0 auto;
-    /* border: 1px solid red; */
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/front_page.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -46,7 +48,7 @@
     <span class="newhome_pinkline"></span>
 
     <div class="photowall">
-        <img src="images/front_page_home_01.jpg" alt="" href="#">
+        <img src="images/front_page_home_01.jpg" alt="" href="#" >
         <img src="images/front_page_home_02.jpg" alt="" href="#">
         <img src="images/front_page_home_03.jpg" alt="" href="#">
         <img src="images/front_page_home_04.jpg" alt="" href="#">
@@ -61,7 +63,9 @@
     </div>
 
     <!------------ news_release ------------>
-    <div class="news_release">
+    <div class="news_release" 
+         data-aos="fade-left" 
+         data-aos-duration="500">
 
         <div class="news_release_left">
             <h1>新聞發布</h1>
@@ -81,15 +85,23 @@
     </div>
 
     <!------------ search_announcement ------------>
-    <div class="search_announcement">
+    <div class="search_announcement" 
+         data-aos="fade-right"
+         data-aos-duration="500">
 
         <img src="images/front_page_bulletin.jpg" alt="">
 
         <div class="search_announcement_right">
             <h1>協尋專區</h1>
             <span class="search_announcement_pinkline"></span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptas ea temporibus et voluptate, blanditiis, exercitationem quis amet illo porro veniam asperiores cum non molestias vero reprehenderit est iste minus?</p>
-            <a href="news.html">See More</a>
+            <ul>
+                <li><a href="https://www.ahiqo.ntpc.gov.tw/cht/index.php?" target="_blank"><i class="fa-solid fa-paw"></i> 新北市政府動物保護防疫處</a></li>
+                <li><a href="https://www.tcapo.gov.taipei/" target="_blank"><i class="fa-solid fa-paw"></i> 臺北市動物保護處</a></li>
+                <li><a href="https://apc.hsinchu.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 新竹縣動物保護防疫所</a></li>
+                <li><a href="https://www.tycg.gov.tw/animal/index.jsp" target="_blank"><i class="fa-solid fa-paw"></i> 桃園市政府動物保護處</a></li>
+                <li><a href="http://www.animal.taichung.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 臺中市動物保護防疫處</a></li>
+            </ul>
+            <a href="news.html" class="search_announcement_right_a">See More</a>
         </div>
 
     </div>
@@ -102,7 +114,7 @@
         
         <div class="donate_info_card">
 
-            <div class="donate_card">
+            <div class="donate_card" data-aos="flip-left">
                 <span class="rectangle rectangle1"></span>
                 <img src="images/dog_01.jpg" alt="">
                 <span class="vertical_line"></span>
@@ -116,7 +128,7 @@
                 </div>
             </div>
 
-            <div class="donate_card">
+            <div class="donate_card" data-aos="flip-right">
                 <span class="rectangle rectangle1"></span>
                 <img src="images/cat_01.jpg" alt="">
                 <span class="vertical_line"></span>
@@ -130,7 +142,7 @@
                 </div>
             </div>
 
-            <div class="donate_card">
+            <div class="donate_card" data-aos="flip-up">
                 <span class="rectangle rectangle1"></span>
                 <img src="images/cat_02.jpg" alt="">
                 <span class="vertical_line"></span>
@@ -144,7 +156,7 @@
                 </div>
             </div>
 
-            <div class="donate_card">
+            <div class="donate_card" data-aos="flip-down">
                 <span class="rectangle rectangle1"></span>
                 <img src="images/dog_02.jpg" alt="">
                 <span class="vertical_line"></span>
@@ -163,6 +175,8 @@
         <a href="adoption.html">See more</a>
 
     </div>
+
+    <button id="myBtn" class="to_top" title="Gotop"><img src="/images/to_top.svg"></button>
 
     <footer>
 
@@ -194,7 +208,36 @@
 
     </footer>
 
+    <script>
+        window.onscroll = scrollFunction;
+        function scrollFunction(){ 
+            if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+                document.getElementById("myBtn").style.display = "block";
+            }else{
+            document.getElementById("myBtn").style.display = "none";
+        }}
+
+        // function topFunction(){
+        // document.body.scrollTop = 0;
+        // document.documentElement.scrollTop = 0;
+        // behavior = "smooth"
+        // }
+
+        var toTop = document.getElementById("myBtn");
+        toTop.addEventListener('click',function(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        })
+    </script>
+
+    <script>
+        AOS.init();
+      </script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

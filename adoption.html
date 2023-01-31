@@ -51,8 +51,8 @@
         <!-- cat_dog -->
         <div class="cat_dog">
             <ul>
-                <li tabindex="1">貓</li>
-                <li tabindex="2">狗</li>
+                <li tabindex="1" class="cat_dog_cat" onclick="catBtn()">貓</li>
+                <li tabindex="2" class="cat_dog_dog" onclick="dogBtn()">狗</li>
             </ul>
         </div>
 
@@ -107,7 +107,7 @@
 
      <div class="pet_card_area">
 
-        <div class="pet_card">
+        <div class="pet_card dog_card">
             <span class="rectangle"></span>
             <img src="images/dog_01.jpg" alt="">
             <span class="vertical_line"></span>
@@ -121,7 +121,7 @@
             </div>
         </div>
 
-        <div class="pet_card">
+        <div class="pet_card cat_card">
             <span class="rectangle"></span>
             <img src="images/cat_01.jpg" alt="">
             <span class="vertical_line"></span>
@@ -135,7 +135,7 @@
             </div>
         </div>
 
-        <div class="pet_card">
+        <div class="pet_card dog_card">
             <span class="rectangle"></span>
             <img src="images/dog_02.jpg" alt="">
             <span class="vertical_line"></span>
@@ -149,7 +149,7 @@
             </div>
         </div>
 
-        <div class="pet_card">
+        <div class="pet_card cat_card">
             <span class="rectangle"></span>
             <img src="images/cat_02.jpg" alt="">
             <span class="vertical_line"></span>
@@ -163,7 +163,7 @@
             </div>
         </div>
 
-        <div class="pet_card">
+        <div class="pet_card dog_card">
             <span class="rectangle"></span>
             <img src="images/dog_03.jpg" alt="">
             <span class="vertical_line"></span>
@@ -177,7 +177,7 @@
             </div>
         </div>
         
-        <div class="pet_card">
+        <div class="pet_card cat_card">
             <span class="rectangle"></span>
             <img src="images/cat_03.jpg" alt="">
             <span class="vertical_line"></span>
@@ -191,7 +191,7 @@
             </div>
         </div>
         
-        <div class="pet_card">
+        <div class="pet_card car_card">
             <span class="rectangle"></span>
             <img src="images/adopt_08.jpg" alt="">
             <span class="vertical_line"></span>
@@ -205,7 +205,7 @@
             </div>
         </div>
         
-        <div class="pet_card">
+        <div class="pet_card dog_card">
             <span class="rectangle"></span>
             <img src="images/adopt_09.jpg" alt="">
             <span class="vertical_line"></span>
@@ -219,7 +219,7 @@
             </div>
         </div>
         
-        <div class="pet_card">
+        <div class="pet_card cat_card">
             <span class="rectangle"></span>
             <img src="images/adopt_07.jpg" alt="">
             <span class="vertical_line"></span>
@@ -285,6 +285,13 @@
     
         </footer>
 
+    <script>
+        function catBtn(){
+            document.getElementsByClassName('dog_card').classList.add('display_none')
+        };
+
+        function dogBtn(){};
+    </script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
 
 </body>
