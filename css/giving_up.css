@@ -247,6 +247,17 @@ body{
     transition: .5s;
 }
 
+.toPublish{
+    text-decoration: none;
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #000;
+}
+
 /*-------------------- bottom --------------------*/
 footer{
     background-color: #fff;
