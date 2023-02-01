@@ -72,9 +72,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1920px;
-    min-height: 900px;
+    height: 700px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .giving_up_banner h1{
@@ -82,7 +82,7 @@ body{
     color: #FEF8EA;
     font-weight: bold;
     margin-left: 120px;
-    margin-top: 70px;
+    margin-top: 30px;
     line-height: 1;
 }
 
