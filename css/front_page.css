@@ -435,6 +435,7 @@ body{
     border: none;
     opacity: .5;
     cursor: pointer;
+    background-color: transparent;
 }
 
 /*-------------------- bottom --------------------*/
