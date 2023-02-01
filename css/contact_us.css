@@ -133,7 +133,7 @@ textarea{
     font-size: 20px;
 }
 
-.form a{
+/* .form a{
     display: block;
     width: 100px;
     height: 40px;
@@ -147,9 +147,33 @@ textarea{
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 15px;
+} */
+
+/* .form a:hover{
+    color: #fff;
+    background-color: #9D8E7E;
+    transition: .5s;
+} */
+
+.form button{
+    display: block;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
 }
 
-.form a:hover{
+.form button:hover{
     color: #fff;
     background-color: #9D8E7E;
     transition: .5s;

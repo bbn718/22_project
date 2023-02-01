@@ -63,6 +63,8 @@
         </ul>
 
         <!-- container -->
+        <div id="cover" class="cover" onclick="removeActive()"></div>
+
         <div id="container" class="container">
             <p>敬請期待！</p>
             <i class="fa-solid fa-xmark btn_close" onclick="removeActive()"></i>
@@ -106,11 +108,23 @@
 
         function removeActive(){
             document.getElementById('container').classList.remove('is-active')
+            document.querySelector('.cover').classList.remove('display_block');
         };
 
         function addActive(){
-            document.getElementById('container').classList.add('is-active')
+            document.getElementById('container').classList.add('is-active');
+            document.querySelector('.cover').classList.add('display_block');
         };
+
+        
+        // window.onclick = function(event){
+        //     var container = document.getElementById('container');
+        //     var modal = document.getElementById('cover');
+        //     if(event.target == modal){
+        //         modal.styleList.add('display_none');
+        //         container.styleList.remove('is-active');
+        //     };
+        // }
 
     </script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>

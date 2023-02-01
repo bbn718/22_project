@@ -171,6 +171,28 @@ body{
     cursor: pointer;
 }
 
+.cover{
+    display: none;/* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 0; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    opacity: .5;
+    background-color: #000;
+    padding-top: 50px;
+}
+
+.display_block{
+    display: block;
+}
+
+.display_none{
+    display: none;
+}
+
 .is-active{
     animation: popup .7s;
     transform: scale(1);
