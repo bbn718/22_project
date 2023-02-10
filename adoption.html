@@ -51,8 +51,9 @@
         <!-- cat_dog -->
         <div class="cat_dog">
             <ul>
+                <li tabindex="1" class="cat_dog_all" onclick="allBtn()">全部</li>
                 <li tabindex="1" class="cat_dog_cat" onclick="catBtn()">貓</li>
-                <li tabindex="2" class="cat_dog_dog" onclick="dogBtn()">狗</li>
+                <li tabindex="3" class="cat_dog_dog" onclick="dogBtn()">狗</li>
             </ul>
         </div>
 
@@ -278,7 +279,7 @@
             
         </div>
     
-        <p>
+        <p class="copyright">
             參考資源：Afurkid、WePet、全國動物收容資訊網、台灣認養地圖。<br>
             本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。
         </p> 
@@ -286,6 +287,21 @@
     </footer>
 
     <script>
+        
+        function allBtn(){
+            var pet_card = document.querySelectorAll('.pet_card');
+            var all_focus = document.querySelector('.cat_dog_all');
+            for(let i = 0; i < pet_card.length; i++){
+                if(pet_card[i].classList.contains('display_none')){
+                    pet_card[i].classList.remove('display_none');
+                    all_focus.classList.remove('unfocus');
+                }else{
+                    pet_card[i].classList.add('display_none');
+                    all_focus.classList.add('unfocus');
+                };
+            };
+        };
+
         function catBtn(){
             var all_dog_card = document.querySelectorAll('.dog_card');
             var cat_focus = document.querySelector('.cat_dog_cat');
@@ -315,6 +331,7 @@
                 };
             };
         };
+
     </script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
 

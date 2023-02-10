@@ -14,16 +14,16 @@ body{
 .top{
     background-color: #fff;
     display: flex;
-    height: 150px;
+    height: 100px;
     align-items: center;
+    box-shadow: 0 0 20px 0px #9D8E7E;
 }
 
 .top .top_logo{
     display: block;
-    width: 195.73px;
-    height: 120px;
+    width: 120px;
+    /* height: 120px; */
     margin-left: 40px;
-    
 }
 
 .top ul{
@@ -31,13 +31,9 @@ body{
 }
 
 .top ul li{
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 48px;
     font-weight: bold;
-}
-
-.top ul li:nth-child(3) a{
-    color: #FFB7B7;
 }
 
 .top li a{
@@ -53,7 +49,7 @@ body{
 .top .login{
     color: #9D8E7E;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     display: block;
     justify-items: right;
     margin-left: auto;
@@ -66,36 +62,42 @@ body{
     transition: .5s;
 }
 
+.top ul li:nth-child(3) a{
+    color: #FFB7B7;
+}
+
 /* giving_up_banner */
 .giving_up_banner{
     background-image: url(../images/giving_up_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1920px;
-    height: 700px;
+    height: 750px;
     margin: 0 auto;
     padding-top: 20px;
 }
 
 .giving_up_banner h1{
-    font-size: 100px;
+    font-size: 88px;
     color: #FEF8EA;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-left: 120px;
     margin-top: 30px;
-    line-height: 1;
+    line-height: 1.2;
+    text-shadow: 0 1px 10px #000;
 }
 
 .giving_up_banner h2{
-    font-size: 56px;
+    font-size: 66px;
     color: #FEF8EA;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-left: 120px;
     line-height: 1.2;
+    text-shadow: 0 1px 10px #000;
 }
 
 .giving_up_banner .giving_up_banner_pinkline{
-    display: block;
+    /* display: block; */
     background-color: #FFB7B7;
     width: 380px;
     height: 5px;
@@ -122,7 +124,7 @@ body{
 }
 
 .breadcrumb li:first-child a{
-    color: #655004;
+    color: #9D8E7E;
 }
 
 .breadcrumb li a:hover{
@@ -130,7 +132,7 @@ body{
     transition: .5s;
 }
 
-/* giving_up_announcement */
+/*-------------------- giving_up_announcement --------------------*/
 .giving_up_announcement{
     width: 900px;
     height: 300px;

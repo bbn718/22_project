@@ -14,14 +14,15 @@ body{
 .top{
     background-color: #fff;
     display: flex;
-    height: 150px;
+    height: 100px;
     align-items: center;
+    box-shadow: 0 0 20px 0px #9D8E7E;
 }
 
 .top .top_logo{
     display: block;
-    width: 195.73px;
-    height: 120px;
+    width: 120px;
+    /* height: 120px; */
     margin-left: 40px;
 }
 
@@ -30,7 +31,7 @@ body{
 }
 
 .top ul li{
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 48px;
     font-weight: bold;
 }
@@ -46,9 +47,9 @@ body{
 }
 
 .top .login{
-    color: #FFB7B7;
+    color: #9D8E7E;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     display: block;
     justify-items: right;
     margin-left: auto;
@@ -59,6 +60,10 @@ body{
 .top a:hover{
     color: #FFB7B7;
     transition: .5s;
+}
+
+.top .login{
+    color: #FFB7B7;
 }
 
 /*-------------------- breadcrumb --------------------*/
@@ -80,7 +85,7 @@ body{
 }
 
 .breadcrumb li:first-child a{
-    color: #655004;
+    color: #9D8E7E;
 }
 
 .breadcrumb li a:hover{
