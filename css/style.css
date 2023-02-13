@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    font-family: 微軟正黑體, Arial;
+    background-image: url(../images/background_img.jpg);
+    background-position: fixed;
+}
+
+/*-------------------- top_nav --------------------*/
+.top{
+    background-color: #fff;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    box-shadow: 0 0 20px 0px #9D8E7E;
+}
+
+.top .top_logo{
+    display: block;
+    width: 120px;
+    /* height: 120px; */
+    margin-left: 20px;
+}
+
+.top ul{
+    display: flex;
+}
+
+.top ul li{
+    font-size: 20px;
+    margin-left: 36px;
+    font-weight: bold;
+}
+
+.top li a{
+    display: block;
+    text-decoration: none;
+    color: #9D8E7E;
+}
+
+.top ul li:last-child{
+    justify-self: flex-end;
+}
+
+.top .login{
+    color: #9D8E7E;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    justify-items: right;
+    margin-left: auto;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.top a:hover{
+    color: #FFB7B7;
+    transition: .5s;
+}
+
+/*-------------------- breadcrumb --------------------*/
+.breadcrumb{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.breadcrumb ul{
+    /* width: 200px; */
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 30px;
+}
+
+.breadcrumb li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumb li:first-child a{
+    color: #9D8E7E;
+}
+
+.breadcrumb li a:hover{
+    color: #FFB7B7;
+    transition: .5s;
+}
+
+
+/*-------------------- bottom --------------------*/
+footer{
+    background-color: #fff;
+}
+
+.bottom{
+    /* width: 100vw; */
+    height: 50px;
+    background-color: #fff;
+    margin-top: 100px;
+    /* padding-left: 25px; */
+    align-items: center;
+    display: flex;
+}
+
+.bottom .bottom_left{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.bottom .bottom_left i{
+    font-size: 16px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: #9D8E7E;
+}
+
+.bottom .bottom_right{
+    width: 100vw;
+}
+
+.bottom .bottom_right ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.bottom .bottom_right li a{
+    text-decoration: none;
+    color: #9D8E7E;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.bottom_left i:hover, .bottom_right li a:hover{
+    color: #FFB7B7;
+    transition: .5s;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 1em;
+    line-height: 1;
+}
+
+
+/*-------------------- scroll --------------------*/
+::-webkit-scrollbar {
+    width: 0;
+}

@@ -7,6 +7,7 @@
     <title>Adoption</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adoption.css">
 </head>
 <body>
@@ -51,14 +52,14 @@
         <!-- cat_dog -->
         <div class="cat_dog">
             <ul>
-                <li tabindex="1" class="cat_dog_all" onclick="allBtn()">全部</li>
-                <li tabindex="1" class="cat_dog_cat" onclick="catBtn()">貓</li>
-                <li tabindex="3" class="cat_dog_dog" onclick="dogBtn()">狗</li>
+                <li id="all">全部</li>
+                <li id="cat">貓</li>
+                <li id="dog">狗</li>
             </ul>
         </div>
 
         <div class="search">
-            <select name="" id="" class="select">
+            <select class="select">
                 <option value="" hidden>請選擇區域</option>
                 <option value="">臺北市</option>
                 <option value="">新北市</option>
@@ -83,12 +84,12 @@
                 <option value="">新竹市</option>
                 <option value="">嘉義市</option>
             </select>
-            <select name="" id="" class="select">
+            <select class="select">
                 <option value="" hidden>請選擇品種</option>
                 <option value="">貓</option>
                 <option value="">狗</option>
             </select>
-            <select name="" id="" class="select">
+            <select class="select">
                 <option value="" hidden>請選擇年齡</option>
                 <option value="">成年</option>
                 <option value="">幼年</option>
@@ -256,83 +257,117 @@
 
     </div>
 
+    <button id="myBtn" class="to_top" title="Gotop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <footer>
 
         <!------------ bottom ------------>
         <div class="bottom">
-    
+
             <div class="bottom_left">
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
             </div>
-    
+
             <div class="bottom_right">
                 <ul>
-                    <li><a href="https://www.afurkid.com/">· Afurkid 毛小孩寵物資訊</a></li>
-                    <li><a href="https://wepet.tw/">· WePet 寵物資訊平台</a></li>
-                    <li><a href="https://www.pet.gov.tw/index.aspx">· 全國動物收容資訊網</a></li>
-                    <li><a href="http://www.meetpets.org.tw/">· 台灣認養地圖</a></li>
+                    <li><a href="https://www.afurkid.com/" target="_blank">· Afurkid 毛小孩寵物資訊</a></li>
+                    <li><a href="https://wepet.tw/" target="_blank">· WePet 寵物資訊平台</a></li>
+                    <li><a href="https://www.pet.gov.tw/index.aspx" target="_blank">· 全國動物收容資訊網</a></li>
+                    <li><a href="http://www.meetpets.org.tw/" target="_blank">· 台灣認養地圖</a></li>
                 </ul>
             </div>
             
         </div>
-    
+
         <p class="copyright">
             參考資源：Afurkid、WePet、全國動物收容資訊網、台灣認養地圖。<br>
             本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。
         </p> 
-    
+
     </footer>
 
     <script>
         
-        function allBtn(){
-            var pet_card = document.querySelectorAll('.pet_card');
-            var all_focus = document.querySelector('.cat_dog_all');
-            for(let i = 0; i < pet_card.length; i++){
-                if(pet_card[i].classList.contains('display_none')){
-                    pet_card[i].classList.remove('display_none');
-                    all_focus.classList.remove('unfocus');
-                }else{
-                    pet_card[i].classList.add('display_none');
-                    all_focus.classList.add('unfocus');
-                };
-            };
-        };
+        // function allBtn(){
+        //     var pet_card = document.querySelectorAll('.pet_card');
+        //     var all_focus = document.querySelector('.cat_dog_all');
+        //     for(let i = 0; i < pet_card.length; i++){
+        //         if(pet_card[i].classList.contains('display_none')){
+        //             pet_card[i].classList.remove('display_none');
+        //             all_focus.classList.remove('unfocus');
+        //         }else{
+        //             pet_card[i].classList.add('display_none');
+        //             all_focus.classList.add('unfocus');
+        //         };
+        //     };
+        // };
 
-        function catBtn(){
-            var all_dog_card = document.querySelectorAll('.dog_card');
-            var cat_focus = document.querySelector('.cat_dog_cat');
-            for(let i = 0; i < all_dog_card.length; i++){
-                if(all_dog_card[i].classList.contains('display_none')){
-                    all_dog_card[i].classList.remove('display_none');
-                    cat_focus.classList.remove('focus');
-                }else{
-                    all_dog_card[i].classList.add('display_none');
-                    all_dog_card[i].classList.remove('focus');
-                    cat_focus.classList.add('focus');
-                };
-            };
-        };
+        // function catBtn(){
+        //     var all_dog_card = document.querySelectorAll('.dog_card');
+        //     var cat_focus = document.querySelector('.cat_dog_cat');
+        //     for(let i = 0; i < all_dog_card.length; i++){
+        //         if(all_dog_card[i].classList.contains('display_none')){
+        //             all_dog_card[i].classList.remove('display_none');
+        //             cat_focus.classList.remove('focus');
+        //         }else{
+        //             all_dog_card[i].classList.add('display_none');
+        //             all_dog_card[i].classList.remove('focus');
+        //             cat_focus.classList.add('focus');
+        //         };
+        //     };
 
-        function dogBtn(){
-            var all_cat_card = document.querySelectorAll('.cat_card');
-            var dog_focus = document.querySelector('.cat_dog_dog');
-            for(let i = 0; i < all_cat_card.length; i++){
-                if(all_cat_card[i].classList.contains('display_none')){
-                    all_cat_card[i].classList.remove('display_none');
-                    dog_focus.classList.remove('focus');
-                }else{
-                    all_cat_card[i].classList.add('display_none');
-                    all_cat_card[i].classList.remove('focus');
-                    dog_focus.classList.add('focus');
-                };
-            };
-        };
+        //     if(all_dog_card.classList.contains('focus')){
+        //         all_dog_card[i].classList.remove('focus');
+        //     }else{
+
+        //     };
+        // };
+
+        // function dogBtn(){
+        //     var all_cat_card = document.querySelectorAll('.cat_card');
+        //     var dog_focus = document.querySelector('.cat_dog_dog');
+        //     for(let i = 0; i < all_cat_card.length; i++){
+        //         if(all_cat_card[i].classList.contains('display_none')){
+        //             all_cat_card[i].classList.remove('display_none');
+        //             dog_focus.classList.remove('focus');
+        //         }else{
+        //             all_cat_card[i].classList.add('display_none');
+        //             all_cat_card[i].classList.remove('focus');
+        //             dog_focus.classList.add('focus');
+        //         };
+        //     };
+        // };
+
+
+        window.onscroll = scrollFunction;
+        function scrollFunction(){ 
+            if(document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+                document.getElementById("myBtn").style.display = "block";
+            }else{
+            document.getElementById("myBtn").style.display = "none";
+        }};
+
+        // function topFunction(){
+        // document.body.scrollTop = 0;
+        // document.documentElement.scrollTop = 0;
+        // behavior = "smooth"
+        // }
+
+        var toTop = document.getElementById("myBtn");
+        toTop.addEventListener('click',function(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        })
 
     </script>
+    <script src="js/adoption.js"></script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
 
 </body>

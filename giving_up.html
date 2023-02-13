@@ -7,6 +7,7 @@
     <title>giving_up</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/giving_up.css">
 </head>
 <body>
@@ -64,23 +65,17 @@
 
     </div>
 
-    <button class="agree" onclick="login_register()">同意</button>
-    <!-- <a href="#" class="agree" onclick="login_register()">同意</a> -->
+    <button class="agree" id="agree">同意</button>
 
-    <div class="warn">請先登錄或註冊！</div>
-    <a href="/publish.html" class="toPublish">至送養頁</a>
     <!-- login_register -->
-    <div class="login_register">
+    <div class="cover" id="cover"></div>
+    <div class="login_register" id="login_register">
 
-        
-        <div class="login">
-            <img src="images/giving_up_01.jpg" alt="">
-            <a href="login.html">登入</a>
-        </div>
-
-        <div class="register">
-            <img src="images/giving_up_02.jpg" alt="">
-            <a href="register.html">註冊</a>
+        <div class="login_register_container">
+            <i class="fa-solid fa-xmark" id="btn_close"></i>
+            <div class="warn">※ 請先登錄或註冊※</div>
+            <a href="publish.html">登入</a>
+            <a href="publish.html">註冊</a>            
         </div>
 
     </div>
@@ -89,43 +84,33 @@
 
         <!------------ bottom ------------>
         <div class="bottom">
-    
+
             <div class="bottom_left">
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
             </div>
-    
+
             <div class="bottom_right">
                 <ul>
-                    <li><a href="https://www.afurkid.com/">· Afurkid 毛小孩寵物資訊</a></li>
-                    <li><a href="https://wepet.tw/">· WePet 寵物資訊平台</a></li>
-                    <li><a href="https://www.pet.gov.tw/index.aspx">· 全國動物收容資訊網</a></li>
-                    <li><a href="http://www.meetpets.org.tw/">· 台灣認養地圖</a></li>
+                    <li><a href="https://www.afurkid.com/" target="_blank">· Afurkid 毛小孩寵物資訊</a></li>
+                    <li><a href="https://wepet.tw/" target="_blank">· WePet 寵物資訊平台</a></li>
+                    <li><a href="https://www.pet.gov.tw/index.aspx" target="_blank">· 全國動物收容資訊網</a></li>
+                    <li><a href="http://www.meetpets.org.tw/" target="_blank">· 台灣認養地圖</a></li>
                 </ul>
             </div>
             
         </div>
-    
-        <p>
+
+        <p class="copyright">
             參考資源：Afurkid、WePet、全國動物收容資訊網、台灣認養地圖。<br>
             本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。
         </p> 
-    
+
     </footer>
     
-    <script>
-        function login_register(){
-            var display_flex = document.querySelector('.login_register');
-            var display_block = document.querySelector('.warn');
-            var hover = document.querySelector('.agree');
-            display_flex.classList.add('display_flex');
-            display_block.classList.add('display_block');
-            hover.classList.add('agree_hover');
-        };
-    </script>
-
+    <script src="js/giving_up.js"></script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
 
 </body>

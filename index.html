@@ -9,8 +9,8 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/front_page.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -176,7 +176,9 @@
 
     </div>
 
-    <button id="myBtn" class="to_top" title="Gotop"><img src="images/to_top.svg"></button>
+    <button id="myBtn" class="to_top" title="Gotop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <footer>
 
@@ -184,18 +186,18 @@
         <div class="bottom">
 
             <div class="bottom_left">
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
             </div>
 
             <div class="bottom_right">
                 <ul>
-                    <li><a href="https://www.afurkid.com/">· Afurkid 毛小孩寵物資訊</a></li>
-                    <li><a href="https://wepet.tw/">· WePet 寵物資訊平台</a></li>
-                    <li><a href="https://www.pet.gov.tw/index.aspx">· 全國動物收容資訊網</a></li>
-                    <li><a href="http://www.meetpets.org.tw/">· 台灣認養地圖</a></li>
+                    <li><a href="https://www.afurkid.com/" target="_blank">· Afurkid 毛小孩寵物資訊</a></li>
+                    <li><a href="https://wepet.tw/" target="_blank">· WePet 寵物資訊平台</a></li>
+                    <li><a href="https://www.pet.gov.tw/index.aspx" target="_blank">· 全國動物收容資訊網</a></li>
+                    <li><a href="http://www.meetpets.org.tw/" target="_blank">· 台灣認養地圖</a></li>
                 </ul>
             </div>
             
@@ -208,14 +210,15 @@
 
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         window.onscroll = scrollFunction;
         function scrollFunction(){ 
-            if(document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000){
+            if(document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
                 document.getElementById("myBtn").style.display = "block";
             }else{
             document.getElementById("myBtn").style.display = "none";
-        }}
+        }};
 
         // function topFunction(){
         // document.body.scrollTop = 0;
@@ -238,6 +241,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
