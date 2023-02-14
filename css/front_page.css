@@ -3,6 +3,7 @@
     background-image: url(../images/front_page_banner1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 90% 12%;
     max-width: 1920px;
     height: 750px;
     margin: 0 auto;

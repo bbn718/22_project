@@ -62,15 +62,15 @@
             <h2>刊登資訊</h2>
             
             <div class="name">
-                <h3>動物暱稱/小名：</h3>
+                <h3>動物暱稱/小名</h3>
                 <input type="text" name="" id="" class="underLineStyle" placeholder="請輸入">
             </div>
             <div class="name">
-                <h3>年齡：</h3>
+                <h3>年齡</h3>
                 <input type="text" name="" id="" class="underLineStyle" placeholder="請輸入">
             </div>
             <div class="name">
-                <h3>毛色：</h3>
+                <h3>毛色</h3>
                 <input type="text" name="" id="" class="underLineStyle" placeholder="請輸入">
             </div>
             <div class="name">
@@ -137,8 +137,9 @@
                 </select>
             </div>
             <div class="name">
-                <h3>其他說明：</h3>
-                <textarea name="" id="" cols="50" rows="10" placeholder="請輸入..."></textarea>
+                <h3>其他說明</h3>
+                <textarea name="" id="other" cols="50" rows="10" placeholder="請輸入..." maxlength="100"></textarea>
+                <p class="name_para" id="name_para" style="line-height: 0;"></p>
             </div>
             <div class="name">
                 <h3>照片上傳 (最多三張)</h3>
@@ -148,23 +149,22 @@
                 
             </div>
             <div class="name">
-                <h3>聯絡人稱呼：</h3>
+                <h3>聯絡人稱呼</h3>
                 <input type="text" name="" id="" class="underLineStyle" placeholder="請輸入">
             </div>
             <div class="name">
-                <h3>聯絡人手機號碼：</h3>
+                <h3>聯絡人手機號碼</h3>
                 <input type="number" name="" id="" class="underLineStyle" placeholder="請輸入">
             </div>
             <div class="name">
-                <h3>領養條件：</h3>
-                <textarea name="" id="" cols="50" rows="10" placeholder="請輸入..."></textarea>
+                <h3>領養條件</h3>
+                <textarea name="" id="adopt" cols="50" rows="10" placeholder="請輸入..." maxlength="100"></textarea>
+                <p class="adopt_para" id="adopt_para" style="line-height: 0;"></p>
             </div>
-
-            <h4>※資訊送出後需經過審核，不會立即出現在列表中，請耐心等待審核勿重覆刊登。</h4>
             
         </div>
 
-        
+      
 
         <!-- publish_form_right -->
         <div class="publish_form_right">
@@ -172,29 +172,28 @@
             <div class="publish_form_right_rule">
                 <h2>刊登條款</h2>
                 <p>
-                    刊登人使用由浪愛所提供之送養資訊刊登服務(以下簡稱「本服務」)時，均受到本「刊登條款」規範。<br><br>
+                    刊登人使用由浪愛所提供之送養資訊刊登服務 ( 以下簡稱「本服務」) 時，均受到本「刊登條款」規範。<br><br>
 
-                    1.浪愛要求所有刊登送養資訊及查看送養資訊者均須加入會員且強制驗證手機號碼，是為了保證所有查看資訊的人都確實的留下紀錄，請送養人注意，如將動物送養後有查覺異常或有任何虐待事項，請立即通報政府單位，我們將配合政府單位之發文要求提供相關紀錄資料。<br><br>
+                    1. 浪愛要求所有刊登送養資訊及查看送養資訊者均須加入會員且強制驗證手機號碼，是為了保證所有查看資訊的人都確實的留下紀錄，請送養人注意，如將動物送養後有查覺異常或有任何虐待事項，請立即通報政府單位，我們將配合政府單位之發文要求提供相關紀錄資料。<br><br>
                     
-                    2.送養資訊不限刊登時間，因此將動物確定送養後請回網站關閉送養資訊，避免造成自身困擾。<br><br>
+                    2. 送養資訊不限刊登時間，因此將動物確定送養後請回網站關閉送養資訊，避免造成自身困擾。<br><br>
                     
-                    3.目前不開放剛出生或尚未開眼之動物送養。<br><br>
+                    3. 目前不開放剛出生或尚未開眼之動物送養。<br><br>
                     
-                    4.浪愛僅為資訊交流平台，無法保證刊登內容之正確性，刊登人對其刊登內容及送養之行為應負完全之責任，刊登人應提供確實之刊登內容，並自負相關法律責任。<br><br>
+                    4. 浪愛僅為資訊交流平台，無法保證刊登內容之正確性，刊登人對其刊登內容及送養之行為應負完全之責任，刊登人應提供確實之刊登內容，並自負相關法律責任。<br><br>
                     
-                    5.浪愛對刊登資訊保有最終篩選、修改、刪除及決定刊登與否之權利。<br><br>
+                    5. 浪愛對刊登資訊保有最終篩選、修改、刪除及決定刊登與否之權利。<br><br>
                     
-                    6.浪愛秉持以領養代替購買之精神，禁止以下類型之刊登內容：<br>
-                    a.要求補貼、認養價、營養費、結紮費等一切任何額外費用或有實際販賣行為。<br>
-                    b.捏造不實資訊。<br>
-                    c.特意收集個人資料。<br>
-                    如有違反上述條款之情事，浪愛可能將其進行會員停權或封鎖之處置。<br><br>
+                    6. 浪愛秉持以領養代替購買之精神，禁止以下類型之刊登內容，如有違反上述條款之情事，浪愛可能將其進行會員停權或封鎖之處置：<br>
+                    a. 要求補貼、認養價、營養費、結紮費等一切任何額外費用或有實際販賣行為。<br>
+                    b. 捏造不實資訊。<br>
+                    c. 特意收集個人資料。<br>
                     
-                    7.刊登人應確定刊登之內容未使用未經授權之文字、圖片、影音或任何形式之資訊。<br><br>
+                    7. 刊登人應確定刊登之內容未使用未經授權之文字、圖片、影音或任何形式之資訊。<br><br>
                     
-                    8.刊登人同意授權於本服務刊登之資訊內容無償提供第三人分享、轉載或推廣。<br><br>
+                    8. 刊登人同意授權於本服務刊登之資訊內容無償提供第三人分享、轉載或推廣。<br><br>
                     
-                    9.資訊的審核時間約為 0 - 3 天，請耐心等候。
+                    9. 資訊的審核時間約為 0 - 3 天，請耐心等候。
                 </p>
 
                 <div class="checkbox">
@@ -204,10 +203,18 @@
 
             </div>
 
-            <a href="#">送出</a>
+            <button id="send">送出</button>
 
         </div>
 
+    </div>
+
+
+    <!-- alert -->
+    <div class="cover" id="cover"></div>
+    <div class="alert" id="alert">
+        <!-- <i class="fa-solid fa-xmark" id="btn_close"></i> -->
+        <span>※ 資訊送出後需經過審核，不會立即出現在列表中，請耐心等待審核勿重覆刊登。</span>
     </div>
 
     <footer>
@@ -239,42 +246,8 @@
         </p> 
 
     </footer>
-
-    <script>
-        
-    $(`input[type="text"]`).focus(function(){
-        $(this).attr('placeholder', '')
-    }).blur(function(){
-        if($(this).val() == ''){
-            $(this).attr('placeholder','請輸入')
-        }
-    })
-
-    $(`input[type="email"]`).focus(function(){
-        $(this).attr('placeholder', '')
-    }).blur(function(){
-        if($(this).val() == ''){
-            $(this).attr('placeholder','請輸入')
-        }
-    })
-
-    $(`input[type="number"]`).focus(function(){
-        $(this).attr('placeholder', '')
-    }).blur(function(){
-        if($(this).val() == ''){
-            $(this).attr('placeholder','請輸入')
-        }
-    })
-
-    $(`textarea`).focus(function(){
-        $(this).attr('placeholder', '')
-    }).blur(function(){
-        if($(this).val() == ''){
-            $(this).attr('placeholder','請輸入')
-        }
-    })
-
-    </script>
+    
+    <script src="js/publish.js"></script>
     
 </body>
 </html>

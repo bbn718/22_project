@@ -81,6 +81,7 @@ body{
 
 .breadcrumb li:first-child a{
     color: #9D8E7E;
+    font-weight: bold;
 }
 
 .breadcrumb li a:hover{

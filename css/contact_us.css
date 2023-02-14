@@ -1,105 +1,8 @@
-/*-------------------- shared --------------------*/
-*{
-    box-sizing: border-box;
-}
-
-body{
-    line-height: 1.6;
-    font-family: 微軟正黑體, Arial;
-    background-image: url(../images/background_img.jpg);
-    background-position: fixed;
-}
-
-/*-------------------- top_nav --------------------*/
-.top{
-    background-color: #fff;
-    display: flex;
-    height: 100px;
-    align-items: center;
-    box-shadow: 0 0 20px 0px #9D8E7E;
-}
-
-.top .top_logo{
-    display: block;
-    width: 120px;
-    /* height: 120px; */
-    margin-left: 40px;
-}
-
-.top ul{
-    display: flex;
-}
-
-.top ul li{
-    font-size: 20px;
-    margin-left: 48px;
-    font-weight: bold;
-}
-
-.top li a{
-    display: block;
-    text-decoration: none;
-    color: #9D8E7E;
-}
-
-.top ul li:last-child{
-    justify-self: flex-end;
-}
-
-.top .login{
-    color: #9D8E7E;
-    text-decoration: none;
-    font-size: 20px;
-    display: block;
-    justify-items: right;
-    margin-left: auto;
-    margin-right: 48px;
-    font-weight: bold;
-}
-
-.top a:hover{
-    color: #FFB7B7;
-    transition: .5s;
-}
-
-.top ul li:nth-child(5) a{
-    color: #FFB7B7;
-}
-
-/*-------------------- breadcrumb --------------------*/
-.breadcrumb{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.breadcrumb ul{
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.breadcrumb li{}
-
-.breadcrumb li a{
-    text-decoration: none;
-    color: #000;
-}
-
-.breadcrumb li:first-child a{
-    color: #9D8E7E;
-}
-
-.breadcrumb li a:hover{
-    color: #FFB7B7;
-    transition: .5s;
-}
-
 /*-------------------- content --------------------*/
 .content{
     width: 1200px;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-around;
     padding: 0 40px;
@@ -120,6 +23,7 @@ body{
     height: 50px;
     margin-bottom: 30px;
     font-size: 20px;
+    padding-left: 5px;
 }
 
 textarea{
@@ -127,6 +31,7 @@ textarea{
     height: 100px;
     resize: none;
     font-size: 20px;
+    padding-left: 5px;
 }
 
 /* .form a{
@@ -157,8 +62,8 @@ textarea{
     height: 40px;
     font-size: 20px;
     font-weight: bold;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #9D8E7E;
     text-align: center;
     text-decoration: none;
     line-height: 40px;
@@ -167,11 +72,11 @@ textarea{
     margin-top: 15px;
     border: none;
     cursor: pointer;
+    transition: .5s;
 }
 
 .form button:hover{
-    color: #fff;
-    background-color: #9D8E7E;
+    transform: scale(1.1);
     transition: .5s;
 }
 
@@ -198,60 +103,5 @@ textarea{
 .service a:hover{
     color: #fff;
     background-color: #9D8E7E;
-    transition: .5s;
-}
-
-/*-------------------- bottom --------------------*/
-footer{
-    background-color: #fff;
-}
-
-footer p{
-    text-align: center;
-    font-size: 6px;
-}
-
-.bottom{
-    /* width: 100vw; */
-    height: 70px;
-    background-color: #fff;
-    margin-top: 250px;
-    padding-left: 25px;
-    align-items: center;
-    display: flex;
-}
-
-.bottom .bottom_left{
-    width: 50vw;
-    display: flex;
-    align-items: center;
-}
-
-.bottom .bottom_left i{
-    font-size: 24px;
-    margin-left: 25px;
-    text-decoration: none;
-    color: #655004;
-}
-
-.bottom .bottom_right{
-    width: 100vw;
-}
-
-.bottom .bottom_right ul{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 40px;
-}
-
-.bottom .bottom_right li a{
-    text-decoration: none;
-    color: #655004;
-    margin-left: 20px;
-    font-weight: bold;
-}
-
-.bottom_left i:hover, .bottom_right li a:hover{
-    color: #FFB7B7;
     transition: .5s;
 }

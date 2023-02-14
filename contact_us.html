@@ -74,7 +74,7 @@
 
     </div>
 
-    <div class="content service">
+    <!-- <div class="content service">
 
         <a href="#">浪浪搜救通報</a>
 
@@ -82,7 +82,7 @@
 
         <a href="#">貓犬遺體通報</a>
 
-    </div>
+    </div> -->
 
     <footer>
 
@@ -113,44 +113,8 @@
         </p> 
 
     </footer>
-
-    <script>
-
-        $(`input[type="text"]`).focus(function(){
-            $(this).attr('placeholder', '')
-        }).blur(function(){
-            if($(this).val() == ''){
-                $(this).attr('placeholder','請輸入您的名稱')
-            }
-        })
-
-        $(`input[type="email"]`).focus(function(){
-            $(this).attr('placeholder', '')
-        }).blur(function(){
-            if($(this).val() == ''){
-                $(this).attr('placeholder','請輸入您的電子郵件')
-            }
-        })
-
-        $(`textarea`).focus(function(){
-            $(this).attr('placeholder', '')
-        }).blur(function(){
-            if($(this).val() == ''){
-                $(this).attr('placeholder','請輸入詳細內容')
-            }
-        })
-
-        // $(`textarea`).focus(function(){
-        //     $(this).css({
-        //         width: 500,
-        //         height: 300,
-        //     })
-        // }).blur(function(){
-        //     $(this).css({'width':'400',height:100})
-        // })
-        
-    </script>
     
+    <script src="js/contact_us.js"></script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
     
 </body>

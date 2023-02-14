@@ -43,25 +43,29 @@
     <!-- content -->
     <div class="content">
 
-        <ul>
-            <!-- line_pay -->
-            <li class="line_pay">
-                <h1>Line Pay</h1>
-                <button class="btn_open" onclick="addActive()">前往</button>
-            </li>
+        <!-- line_pay -->
+        <div class="line_pay">
+            <div class="line_pay_bg">
+                <h2>Line Pay</h2>
+            </div>
+            <button class="btn_open" onclick="addActive()">詳細</button>
+        </div>
 
-            <!-- bank_transfer -->
-            <li class="bank_transfer">
-                <h1>銀行匯款</h1>
-                <button class="btn_open" onclick="addActive()">前往</button>
-            </li>
+        <!-- bank_transfer -->
+        <div class="bank_transfer">
+            <div class="bank_transfer_bg">
+                <h2>銀行匯款</h2>
+            </div>
+            <button class="btn_open" onclick="addActive()">詳細</button>
+        </div>
 
-            <!-- cash_donate -->
-            <li class="cash_donate">
-                <h1>現金袋</h1>
-                <button class="btn_open" onclick="addActive()">前往</button>
-            </li>
-        </ul>
+        <!-- cash_donate -->
+        <div class="cash_donate">
+            <div class="cash_donate_bg">
+                <h2>現金袋</h2>
+            </div>
+            <button class="btn_open" onclick="addActive()">詳細</button>
+        </div>
 
         <!-- container -->
         <div id="cover" class="cover" onclick="removeActive()"></div>
@@ -105,29 +109,7 @@
 
     </footer>
 
-    <script>
-
-        function removeActive(){
-            document.getElementById('container').classList.remove('is-active')
-            document.querySelector('.cover').classList.remove('display_block');
-        };
-
-        function addActive(){
-            document.getElementById('container').classList.add('is-active');
-            document.querySelector('.cover').classList.add('display_block');
-        };
-
-        
-        // window.onclick = function(event){
-        //     var container = document.getElementById('container');
-        //     var modal = document.getElementById('cover');
-        //     if(event.target == modal){
-        //         modal.styleList.add('display_none');
-        //         container.styleList.remove('is-active');
-        //     };
-        // }
-
-    </script>
+    <script src="/js/donate.js"></script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
     
 </body>
