@@ -66,6 +66,7 @@ article:hover{
     padding: 5px;
     margin: 0 10px;
     line-height: 1;
+    font-weight: bold;
 }
 
 .article_item .article_news{
@@ -110,4 +111,14 @@ article:hover{
     text-decoration: none;
     color: #000;
     font-weight: bold;
+}
+
+/****************** nonofficial ******************/
+.nonarticle_official{
+    display: inline-block;
+    background-color: #FFB7B7;
+    color: #fff;
+    padding: 5px;
+    margin: 0 10px;
+    line-height: 1;
 }

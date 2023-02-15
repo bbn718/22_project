@@ -11,9 +11,13 @@ all.addEventListener('click', () => {
 
     for(let i = 0; i < all_el.length; i++){
         if(all.classList.contains('focus') == false){
-            all_el[i].style.display = 'block';
+            setTimeout(e => {
+                all_el[i].style.cssText = 'display: block;';
+            }, 300);
         }else{
-            all_el[i].style.display = 'none';
+            setTimeout(e => {
+                all_el[i].style.cssText = 'display: none;';
+            }, 300);
         };
     };
 
@@ -41,16 +45,19 @@ news.addEventListener('click', () => {
 
     for(let i = 0; i < news_el.length; i++){
         if(news.classList.contains('focus') == false){
-            news_el[i].style.display = 'block';
-            for(let j = 0; j < activity_el.length; j++){
-                activity_el[j].style.display = 'none';
-            };
-            for(let n = 0; n < official_el.length; n++){
-                official_el[n].style.display = 'none';
-            }
-            
+            setTimeout(e => {
+                news_el[i].style.display = 'block';
+                for(let j = 0; j < activity_el.length; j++){
+                    activity_el[j].style.display = 'none';
+                };
+                for(let n = 0; n < official_el.length; n++){
+                    official_el[n].style.display = 'none';
+                };
+            }, 300);
         }else{
-            news_el[i].style.display = 'none';
+            setTimeout(e => {
+               news_el[i].style.display = 'none'; 
+            }, 300);
         };
     };
 
@@ -78,15 +85,19 @@ activity.addEventListener('click', () => {
 
     for(let i = 0; i < activity_el.length; i++){
         if(activity.classList.contains('focus') == false){
-            activity_el[i].style.display = 'block';
-            for(let j = 0; j < news_el.length; j++){
-                news_el[j].style.display = 'none';
-            };
-            for(let n = 0; n < official_el.length; n++){
-                official_el[n].style.display = 'none';
-            }
+            setTimeout(e => {
+                activity_el[i].style.display = 'block';
+                for(let j = 0; j < news_el.length; j++){
+                    news_el[j].style.display = 'none';
+                };
+                for(let n = 0; n < official_el.length; n++){
+                    official_el[n].style.display = 'none';
+                };
+            }, 300);
         }else{
-        activity_el[i].style.display = 'none';
+            setTimeout(e => {
+                activity_el[i].style.display = 'none';
+            }, 300);
         };
     };
     
@@ -115,15 +126,19 @@ search.addEventListener('click', () => {
 
     for(let i = 0; i < official_el.length; i++){
         if(search.classList.contains('focus') == false){
-            official_el[i].style.display = 'block';
-            for(let j = 0; j < news_el.length; j++){
-                news_el[j].style.display = 'none';
-            };
-            for(let n = 0; n < activity_el.length; n++){
-                activity_el[n].style.display = 'none';
-            }
+            setTimeout(e => {
+                official_el[i].style.display = 'block';
+                for(let j = 0; j < news_el.length; j++){
+                    news_el[j].style.display = 'none';
+                };
+                for(let n = 0; n < activity_el.length; n++){
+                    activity_el[n].style.display = 'none';
+                };
+            }, 300);
         }else{
-        official_el[i].style.display = 'none';
+            setTimeout(e => {
+                official_el[i].style.display = 'none';
+            }, 300);
         };
     };
 

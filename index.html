@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
     <title>StrayLove</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -18,9 +19,13 @@
     <div class="top">
 
         <a href="index.html"><img src="images/logo.png" class="top_logo"></a>
+
+        <i class="fa-solid fa-bars nav_btn" id="nav_btn"></i>
         
-        <nav>
-            <ul>
+        <a href="login.html" class="login_icon_a"><img src="images/login_icon.png"></a>
+        
+        <nav>        
+            <ul id="nav_bar">
                 <li><a href="intro.html">關於我們</a></li>
                 <li><a href="adoption.html">愛心領養</a></li>
                 <li><a href="giving_up.html">飼主送養</a></li>
@@ -33,6 +38,10 @@
         <a href="login.html" class="login">登入/註冊</a>
 
     </div>
+
+    <div id="cover"></div>
+
+    <span class="space"></span>
 
     <!------------ front_page_banner ------------>
     <div class="front_page_banner">
@@ -65,19 +74,48 @@
     <!------------ news_release ------------>
     <div class="news_release" 
          data-aos="fade-up" 
-         data-aos-duration="500">
+         data-aos-duration="500"
+         >
 
         <div class="news_release_left">
+
             <h1>新聞發布</h1>
             <span class="news_release_pinkline"></span>
-            <ul>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i>【新竹市】萌翻天！竹市毛寶貝同樂會今登場 現場免費健檢飼主直呼好安心</li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i>【臺南市】購買動物用藥品「停查看」拒絕來路不明黑心禁藥</li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i>【產發處動物保護防疫所】首座寵物公園落腳暖暖運動公園 預計明年六月前啟用</li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i>【雲林縣】打造全方位友善城市 虎尾汪星人運動公園啟用</li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i>【動物保護處動物檢診課】觀音區台66線私人狗園涉虐狗 動保處將追查開罰</li>
-            </ul>
+
+            <article class="all_el news_el">
+                <div class="article_item">
+                    <p class="article_news">新聞</p>
+                    <time class="time">111-12-03</time>
+                    <p class="para">【雲林縣】觀音區台66線私人狗園涉虐狗致死 動保處將追查開罰</p>
+                </div>
+            </article>
+
+            <article class="all_el activity_el">
+                <div class="article_item">
+                    <p class="article_activity">活動</p>
+                    <time class="time">111-10-23</time>
+                    <p class="para">【新北市】淡水河畔情人碼頭舉辦「寵物情人 陪伴一生」活動</p>
+                </div>
+            </article>
+
+            <article class="all_el news_el">
+                <div class="article_item">
+                    <p class="article_news">新聞</p>
+                    <time class="time">111-8-04</time>
+                    <p class="para">【臺南市】購買動物用藥品「停查看」拒絕來路不明黑心禁藥</p>
+                </div>
+            </article>
+
+            <article class="all_el news_el">
+                <div class="article_item">
+                    <p class="article_news">新聞</p>
+                    <time class="time">111-1-11</time>
+                    <p class="para">【桃園市】桃園市110年特定寵物業評鑑結果</p>
+                </div>
+            </article>
+
             <a href="news.html" class="news_release_left_a">More</a>
+
         </div>
 
         <img src="images/front_page_news.jpg" alt="">
@@ -94,13 +132,42 @@
         <div class="search_announcement_right">
             <h1>協尋專區</h1>
             <span class="search_announcement_pinkline"></span>
-            <ul>
-                <li><a href="https://www.ahiqo.ntpc.gov.tw/cht/index.php?" target="_blank"><i class="fa-solid fa-paw"></i> 新北市政府動物保護防疫處</a></li>
-                <li><a href="https://www.tcapo.gov.taipei/" target="_blank"><i class="fa-solid fa-paw"></i> 臺北市動物保護處</a></li>
-                <li><a href="https://apc.hsinchu.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 新竹縣動物保護防疫所</a></li>
-                <li><a href="https://www.tycg.gov.tw/animal/index.jsp" target="_blank"><i class="fa-solid fa-paw"></i> 桃園市政府動物保護處</a></li>
-                <li><a href="http://www.animal.taichung.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 臺中市動物保護防疫處</a></li>
-            </ul>
+
+            <article class="all_el official_el">
+                <div class="article_item">
+                    <p class="article_official">官方</p>
+                    <a href="https://www.tcapo.gov.taipei/" target="_blank">臺北市動物保護處</a>
+                </div>
+            </article>
+
+            <article class="all_el official_el">
+                <div class="article_item">
+                    <p class="article_official">官方</p>
+                    <a href="https://www.ahiqo.ntpc.gov.tw/cht/index.php?" target="_blank">新北市政府動物保護防疫處</a>
+                </div>
+            </article>
+
+            <article class="all_el official_el">
+                <div class="article_item">
+                    <p class="article_official">官方</p>
+                    <a href="https://ahipo.tainan.gov.tw/" target="_blank">臺南市動物防疫保護處</a>
+                </div>
+            </article>
+
+            <article class="all_el official_el">
+                <div class="article_item">
+                    <p class="article_official">官方</p>
+                    <a href="https://livestock.kcg.gov.tw/" target="_blank">高雄市動物保護處</a>
+                </div>
+            </article>
+
+            <article class="all_el official_el">
+                <div class="article_item">
+                    <p class="nonarticle_official">民間</p>
+                    <a href="https://noramichi.app/" target="_blank">浪途－臺灣流浪動物通報媒合平台</a>
+                </div>
+            </article>
+
             <a href="news.html" class="search_announcement_right_a">More</a>
         </div>
 
@@ -114,7 +181,7 @@
         
         <div class="donate_info_card">
 
-            <div class="donate_card" data-aos="flip-left">
+            <div class="donate_card" data-aos="flip-up">
                 <span class="rectangle rectangle1"></span>
                 <img src="images/dog_01.jpg" alt="">
                 <span class="vertical_line"></span>
@@ -128,7 +195,7 @@
                 </div>
             </div>
 
-            <div class="donate_card" data-aos="flip-right">
+            <div class="donate_card" data-aos="flip-up">
                 <span class="rectangle rectangle1"></span>
                 <img src="images/cat_01.jpg" alt="">
                 <span class="vertical_line"></span>
@@ -156,7 +223,7 @@
                 </div>
             </div>
 
-            <div class="donate_card" data-aos="flip-down">
+            <div class="donate_card" data-aos="flip-up">
                 <span class="rectangle rectangle1"></span>
                 <img src="images/dog_02.jpg" alt="">
                 <span class="vertical_line"></span>
@@ -172,73 +239,78 @@
 
         </div>
 
-        <a href="adoption.html">More</a>
+        <a href="adoption.html" class="adopt_more">More</a>
 
     </div>
 
     <button id="myBtn" class="to_top" title="Gotop">
-        <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-solid fa-arrow-up" id="arrow"></i>
     </button>
 
     <footer>
 
-        <!------------ bottom ------------>
-        <div class="bottom">
+        <div class="bottom_container">
 
-            <div class="bottom_left">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            <!------------ bottom ------------>
+            <div class="bottom">
+
+                <div class="bottom_left">
+                    <a href="index.html"><img src="images/logo.png" class="bottom_logo"></a>
+                    <p class="bottom_para">以前曾經領養過兩隻流浪貓，後來因為一些原因使得我無法繼續陪伴牠們長大，但是我對牠們的愛始終如初，特此建立此網站以表對待流浪動物的關愛，讓牠們都可以找到有愛的家。</p>
+                    <div class="bottom_icon">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="fast_nav">
+                    <ul>
+                        <li><a href="intro.html">關於我們</a></li>
+                        <li><a href="adoption.html">愛心領養</a></li>
+                        <li><a href="giving_up.html">飼主送養</a></li>
+                        <li><a href="contact_us.html">聯絡我們</a></li>
+                        <li><a href="donate.html">善心贊助</a></li>
+                    </ul>
+                </div>
+
+                <div class="bottom_right">
+                    <img src="images/qrcode.jpg" class="qrcode">
+                    <p>如果有任何建議與合作</p>
+                    <p>歡迎來信：vanishing0718@gmail.com</p>
+                    <p class="copyright_2023">Copyright © 2023 浪愛  All rights reserved</p>    
+                    <!-- <ul>
+                        <li><a href="https://www.afurkid.com/" target="_blank">· Afurkid 毛小孩寵物資訊</a></li>
+                        <li><a href="https://wepet.tw/" target="_blank">· WePet 寵物資訊平台</a></li>
+                        <li><a href="https://www.pet.gov.tw/index.aspx" target="_blank">· 全國動物收容資訊網</a></li>
+                        <li><a href="http://www.meetpets.org.tw/" target="_blank">· 台灣認養地圖</a></li>
+                    </ul> -->
+                </div>
+
             </div>
 
-            <div class="bottom_right">
-                <ul>
-                    <li><a href="https://www.afurkid.com/" target="_blank">· Afurkid 毛小孩寵物資訊</a></li>
-                    <li><a href="https://wepet.tw/" target="_blank">· WePet 寵物資訊平台</a></li>
-                    <li><a href="https://www.pet.gov.tw/index.aspx" target="_blank">· 全國動物收容資訊網</a></li>
-                    <li><a href="http://www.meetpets.org.tw/" target="_blank">· 台灣認養地圖</a></li>
-                </ul>
-            </div>
-            
+            <p class="copyright_2023 copyright_rwd">Copyright © 2023 浪愛  All rights reserved</p> 
+
         </div>
 
-        <p class="copyright">
-            參考資源：Afurkid、WePet、全國動物收容資訊網、台灣認養地圖。<br>
-            本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。
-        </p> 
-
+        <div class="copyright_container">
+            <p class="copyright">參考資源：Afurkid、WePet、全國動物收容資訊網、台灣認養地圖</p>
+            <p class="copyright">本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用</p>
+            <p class="copyrightrwd">本平台僅供學習、展示之用</p>
+            <p class="copyrightrwd">本網站為緯育TibaMe前端工程師班第82期學員專題作品</p>
+        </div>
+          
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        window.onscroll = scrollFunction;
-        function scrollFunction(){ 
-            if(document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
-                document.getElementById("myBtn").style.display = "block";
-            }else{
-            document.getElementById("myBtn").style.display = "none";
-        }};
-
-        // function topFunction(){
-        // document.body.scrollTop = 0;
-        // document.documentElement.scrollTop = 0;
-        // behavior = "smooth"
-        // }
-
-        var toTop = document.getElementById("myBtn");
-        toTop.addEventListener('click',function(){
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        })
-    </script>
 
     <script>
         AOS.init();
     </script>
 
+    <script src="js/index.js"></script>
+    <script src="js/front_page.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
     

@@ -57,7 +57,7 @@
     <div class="publish_form">
 
         <!-- publish_form_left -->
-        <div class="publish_form_left">
+        <form class="publish_form_left" id="form">
             
             <h2>刊登資訊</h2>
             
@@ -76,7 +76,7 @@
             <div class="name">
                 <h3>品種</h3>
                 <select name="" id="">
-                    <option value=""  hidden>請選擇品種</option>
+                    <option value="1" hidden>請選擇品種</option>
                     <option value="">貓</option>
                     <option value="">狗</option>
                 </select>
@@ -84,7 +84,7 @@
             <div class="name">
                 <h3>性別</h3>
                 <select name="" id="">
-                    <option value=""  hidden>請選擇性別</option>
+                    <option value="1"  hidden>請選擇性別</option>
                     <option value="">女生</option>
                     <option value="">男生</option>
                 </select>
@@ -92,7 +92,7 @@
             <div class="name">
                 <h3>體型</h3>
                 <select name="" id="">
-                    <option value=""  hidden>請選擇體型</option>
+                    <option value="1"  hidden>請選擇體型</option>
                     <option value="">巨大</option>
                     <option value="">大</option>
                     <option value="">中</option>
@@ -103,7 +103,7 @@
             <div class="name">
                 <h3>是否結渣</h3>
                 <select name="" id="">
-                    <option value=""  hidden>請選擇是否結紮</option>
+                    <option value="1"  hidden>請選擇是否結紮</option>
                     <option value="">是</option>
                     <option value="">否</option>
                 </select>
@@ -111,7 +111,7 @@
             <div class="name">
                 <h3>當前位置</h3>
                 <select name="" id="">
-                    <option value="" hidden>請選擇區域</option>
+                    <option value="1" hidden>請選擇區域</option>
                     <option value="">臺北市</option>
                     <option value="">新北市</option>
                     <option value="">桃園市</option>
@@ -162,7 +162,7 @@
                 <p class="adopt_para" id="adopt_para" style="line-height: 0;"></p>
             </div>
             
-        </div>
+        </form>
 
       
 
@@ -203,7 +203,7 @@
 
             </div>
 
-            <button id="send">送出</button>
+            <button id="send" type="submit" form="form">送出</button>
 
         </div>
 
@@ -214,7 +214,9 @@
     <div class="cover" id="cover"></div>
     <div class="alert" id="alert">
         <!-- <i class="fa-solid fa-xmark" id="btn_close"></i> -->
-        <span>※ 資訊送出後需經過審核，不會立即出現在列表中，請耐心等待審核勿重覆刊登。</span>
+        <span>※ 資訊送出後需經過審核，不會立即出現在列表中，請耐心等待審核勿重覆刊登 ※</span>
+        <span>※ 您將於 <span id="countdown">5</span> 秒內跳轉至首頁 ※</span>
+        
     </div>
 
     <footer>

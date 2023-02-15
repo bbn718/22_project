@@ -9,43 +9,59 @@ $(`input[type="text"]`).focus(function(){
         $(this).attr('placeholder','請輸入')
         $(this).css({
             borderBottom: '2px solid red',
-        })
+        });
     }else{
         $(this).attr('style', '');
-    }
-})
+    };
+});
 
 $(`input[type="email"]`).focus(function(){
     $(this).attr('placeholder', '')
 }).blur(function(){
     if($(this).val() == ''){
         $(this).attr('placeholder','請輸入')
-    }
-})
+    };
+});
 
 $(`input[type="number"]`).focus(function(){
     $(this).attr('placeholder', '')
     if($(this).css({borderBottom: '2px solid red',})){
         $(this).attr('style', '');
-    }
+    };
 }).blur(function(){
     if($(this).val() == ''){
         $(this).attr('placeholder','請輸入')
         $(this).css({
             borderBottom: '2px solid red',
-        })
+        });
     }else{
         $(this).attr('style', '');
-    }
-})
+    };
+});
+
+$('select').focus(function(){
+    if($(this).css({
+        border: '1px solid red',
+    })){
+        $(this).attr('style', '');
+    };
+}).blur(function(){
+    if($(this).val() == '1'){
+        $(this).css({
+            border: '1px solid red',
+        });
+    }else{
+        $(this).attr('style', '');
+    };
+});
 
 $(`textarea`).focus(function(){
     $(this).attr('placeholder', '')
 }).blur(function(){
     if($(this).val() == ''){
         $(this).attr('placeholder','請輸入')
-    }
-})
+    };
+});
 
 $('#other').focus().blur(function(){
     if($(this).val().length == 0){
@@ -86,28 +102,62 @@ let alert_el = document.getElementById('alert');
 let send = document.getElementById('send');
 let body = document.querySelector('body');
 let check = document.getElementById('checkbox');
+let input_val = document.querySelectorAll('input');
 
 send.addEventListener('click', e => {
+
     e.preventDefault();
-    if(check.checked){
+
+    let isInvalid = false;
+    for(let i = 0; i < input_val.length; i++){
+        
+        if(input_val[i].value == ''){
+            isInvalid = true;
+            break;
+        };
+    };
+
+    if((check.checked) && (isInvalid == false)){
         alert_el.style.display = 'inline-block';
         cover.style.display = 'block';
         body.style.overflow = 'hidden';
-    }else{
-        alert('請詳閱後打勾！');
-    };
+        setTimeout(function(){
+            window.location.assign('../index.html')
+        }, 5000)
+        
+        let countdown_el = document.getElementById('countdown');
+        let timeleft = 5;
+        let countdown = setInterval(function(){
+            timeleft--;
     
+            if(timeleft <= 0){
+                clearInterval(countdown);
+            }
+    
+            countdown_el.innerHTML = timeleft;
+        }, 1000);
 
-});
-
-document.addEventListener('click', e => {
-    if(e.target.classList.contains('cover')){
-        alert_el.style.display = 'none';
-        cover.style.display = 'none';
-        body.style.overflow = 'auto';
-        window.location.assign('../index.html')
     };
+
+    if(isInvalid){
+        alert('請將資料填妥！');
+    };
+
+    if(check.checked == false){
+        alert('請詳閱刊登條款後打勾！')
+    };
+
 });
+
+
+
+// document.addEventListener('click', e => {
+//     if(e.target.classList.contains('cover')){
+//         alert_el.style.display = 'none';
+//         cover.style.display = 'none';
+//         body.style.overflow = 'auto';
+//     };
+// });
 
 
 /******************** 表單送出未打勾則跳出彈窗 ********************/

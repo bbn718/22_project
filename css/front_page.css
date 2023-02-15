@@ -101,13 +101,14 @@
 
 .news_release .news_release_left{
     margin-right: 20px;
-    text-align: center;
+    
 }
 
 .news_release .news_release_left h1{
     font-size: 48px;
     color: #9D8E7E;
     font-weight: bold;
+    text-align: center;
 }
 
 .news_release .news_release_left .news_release_pinkline{
@@ -117,27 +118,47 @@
     height: 5px;
     margin: 0 auto;
     margin-top: 15px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.news_release .news_release_left ul{
-    margin-top: 50px;
-}
+/*-------------------- article --------------------*/
 
-.news_release .news_release_left li{
-    text-align: left;
-}
-
-.news_release .news_release_left li a{
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-    line-height: 1.8;
-}
-
-.news_release .news_release_left li a:hover{
+article:hover{
     background-color: rgba(157, 142, 126, .2);
+}
+
+.article_item{
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.article_item .article_news{
+    display: inline-block;
+    background-color: darkcyan;
+    color: #fff;
+    padding: 5px;
+    margin: 0 10px;
+    line-height: 1;
+}
+
+.article_item .article_activity{
+    display: inline-block;
+    background-color: darkgoldenrod;
+    color: #fff;
+    padding: 5px;
+    margin: 0 10px;
+    line-height: 1;
+}
+
+.article_item time{
+    color: #9D8E7E;
+}
+
+.article_item .para{
+    font-weight: bold;
+    padding-left: 60px;
+    cursor: pointer;
 }
 
 .news_release .news_release_left_a{
@@ -155,6 +176,7 @@
     border-radius: 10px;
     border: 2px solid #9D8E7E;
     transition: .5s;
+    text-align: center;
 }
 
 .news_release .news_release_left_a:hover{
@@ -181,7 +203,6 @@
 
 .search_announcement_right{
     margin-left: 40px;
-    text-align: center;
     width: 580px;
 }
 
@@ -189,29 +210,37 @@
     font-size: 48px;
     color: #9D8E7E;
     font-weight: bold;
+    text-align: center;
 }
 
-.search_announcement_right ul{
-    margin-top: 50px;
+.search_announcement_right .official_el .article_item{
+    padding: 10px 0;
 }
 
-.search_announcement_right li{
-    text-align: left;
+/*-------------------- article --------------------*/
+.article_official{
+    display: inline-block;
+    background-color: darkgreen;
+    color: #fff;
+    padding: 5px;
+    margin: 0 10px;
+    line-height: 1;
 }
 
-.search_announcement_right li a{
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
+.nonarticle_official{
+    display: inline-block;
+    background-color: #FFB7B7;
+    color: #fff;
+    padding: 5px;
+    margin: 0 10px;
+    line-height: 1;
+}
+
+.article_item a{
     text-decoration: none;
     color: #000;
-    line-height: 1.8;
+    font-weight: bold;
 }
-
-.search_announcement_right li a:hover{
-    background-color: rgba(157, 142, 126, .2);
-}
-
 
 .search_announcement_right_a{
     display: block;
@@ -227,6 +256,7 @@
     margin-top: 50px;
     border-radius: 10px;
     border: 2px solid #9D8E7E;
+    text-align: center;
 }
 
 .search_announcement_right_a:hover{
@@ -241,6 +271,7 @@
     height: 5px;
     margin: 0 auto;
     margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 /*-------------------- donate_info --------------------*/
@@ -270,7 +301,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .donate_info .donate_info_card > div{
@@ -375,10 +406,9 @@
     display: none;
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 40px;
     border-radius: 50px;
     border: none;
-    opacity: .5;
     cursor: pointer;
     color: #fff;
     background-color: #9D8E7E;
@@ -391,3 +421,239 @@
     transition: .5s;
     transform: scale(1.1);
 }
+
+#arrow{
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+@media screen and (max-width: 428px){
+
+    /*-------------------- front_page_banner --------------------*/
+    .front_page_banner{
+        background-position: 38% 0%;
+        background-size: cover;
+        width: auto;
+        height: 560px;
+        padding: 0;
+        padding-top: 120px;
+    }
+
+    .front_page_banner h1{
+        font-size: 48px;
+        margin-left: 20px;
+        
+    }
+
+    .front_page_banner h2{
+        font-size: 32px;
+        margin-left: 20px;
+    }
+
+    /*-------------------- front_page_newhome --------------------*/
+    .front_page_newhome_h1{
+        font-size: 36px;
+        margin-top: 30px;
+    }
+
+    .newhome_pinkline{
+        margin-top: 10px;
+        width: 100px;
+        height: 4px;
+    }
+
+    .photowall{
+        width: auto;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .photowall .front_page_home{
+        width: 160px;
+        height: 155px; 
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    .photowall .front_page_home > img{
+        width: 160px;
+        height: 155px;
+    }
+
+    /*-------------------- news_release --------------------*/
+    .news_release{
+        width: auto;
+        margin-top: 100px;
+    }
+
+    .news_release .news_release_left{
+        margin: 0 auto;
+    }
+
+    .news_release .news_release_left h1{
+        font-size: 36px;
+        
+    }
+
+    .news_release .news_release_left .news_release_pinkline{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 80px;
+        height: 3px;
+    }
+    
+    .news_release img{
+        display: none;
+        width: 250px;
+        height: 200px;
+    }
+
+    /*-------------------- article --------------------*/
+    .article_item{
+        font-size: 12px;
+    }
+
+    .article_item .para{
+        padding-left: 0;
+        margin-top: 5px;
+    }
+
+    .news_release .news_release_left_a{
+        width: 70px;
+        height: 33px;
+        line-height: 30px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    /*-------------------- search_announcement --------------------*/
+    .search_announcement{
+        width: auto;
+        margin-top: 100px;
+    }
+
+    .search_announcement > img{
+        display: none;
+    }
+
+    .search_announcement_right{
+        margin: 0 auto;
+        width: 335px;
+    }
+
+    .search_announcement_right h1{
+        font-size: 36px;
+    }
+
+    .search_announcement_right_a{
+        width: 70px;
+        height: 33px;
+        line-height: 30px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .search_announcement_right .search_announcement_pinkline{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 80px;
+        height: 3px;
+    }
+
+    /*-------------------- article --------------------*/
+    .article_official{}
+
+    .nonarticle_official{}
+
+    .article_item a{}
+
+    /*-------------------- donate_info --------------------*/
+    .donate_info{
+        width: auto;
+    }
+
+    .donate_info h1{
+        font-size: 36px;
+    }
+
+    .donate_info .donate_info_pinkline{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 80px;
+        height: 3px;
+    }
+
+    .donate_info .donate_info_card{
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .donate_info .donate_info_card > div{
+        margin-top: 0;
+    }
+
+    .donate_info .donate_info_card .rectangle{
+        width: 180px;
+        height: 170px;
+    }
+    
+    .donate_info_card .donate_card{
+        
+    }
+
+    .donate_info_card .donate_card img{
+        height: 170px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .donate_info_card .donate_card .vertical_line{
+        height: 170px;
+        width: 1px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .donate_info_card .donate_card h3{
+        margin-left: 10px;
+        font-size: 12px;
+        line-height: 1.2;
+        margin-top: 10px;
+    }
+
+    .donate_info_card .donate_card a{
+        width: 60px;
+        font-size: 12px;
+        height: 27px;
+        line-height: 25px;
+    }
+
+    .donate_info .adopt_more{
+        width: 70px;
+        height: 33px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+
+    /*-------------------- to_top --------------------*/
+    .to_top{
+        width: 25px;
+        height: 25px;
+        bottom: 13px;
+    }
+
+    #arrow{
+        font-size: 12px;
+    }
+}
+
