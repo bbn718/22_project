@@ -40,79 +40,141 @@
         </ul>
     </nav>
 
-    <!-- Title -->
-    <h1>最新消息</h1>
-    <span class="pinkline"></span>
-    <!-- news_release -->
-    <div class="news_release news">
+    <div class="news">
 
-        <span class="rectangle"></span>
-        <div class="img_title">
-            <h1>新聞發布</h1>
-            <img src="images/news_01.jpg" alt="">
-        </div>
-        <span class="vertical_line"></span>
-        <div class="news_release_right news_right">
+        <h1>最新消息</h1>
+        <span class="pinkline"></span>
+
+        <!-- news_title -->
+        <div class="news_title">
             <ul>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i> 【新竹市】萌翻天！竹市毛寶貝同樂會今登場 現場免費健檢飼主直呼好安心</li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i> 【臺南市】購買動物用藥品「停查看」拒絕來路不明黑心禁藥</li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i> 【產發處動物保護防疫所】首座寵物公園落腳暖暖運動公園 預計明年六月前啟用</li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i> 【雲林縣】打造全方位友善城市 虎尾汪星人運動公園啟用</li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i> 【動物保護處動物檢診課】觀音區台66線私人狗園涉虐狗致死 動保處將追查開罰</li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i> 【桃園市】桃園市111年特定寵物業評鑑結果</li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i> 【新北市】寵物食品標示不明 分裝販售小心觸法</li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-paw"></i> 【雲林縣】保護雲林毛小孩 防疫所與嘉義大學合作推動犬貓防疫及絕育工作</li>
+                <li class="focus" id="all">全部消息</li>
+                <li id="news">新聞發布</li>
+                <li id="activity">活動公告</li>
+                <li id="search">協尋資訊</li>
             </ul>
-            <a href="#" class="see_more">See more</a>
         </div>
+
+        <!-- article -->
+
+        <article>
+            <div class="article_item">
+                <p class="article_top">置頂</p>
+                <time class="time">112-01-11</time>
+                <p class="para">【臺北市】112年度狂犬病疫苗及晶片巡迴注射行程</p>
+            </div>
+        </article>
+
+        <article class="all_el news_el">
+            <div class="article_item">
+                <p class="article_news">新聞</p>
+                <time class="time">111-12-03</time>
+                <p class="para">【雲林縣】觀音區台66線私人狗園涉虐狗致死 動保處將追查開罰</p>
+            </div>
+        </article>
+
+        <article class="all_el news_el">
+            <div class="article_item">
+                <p class="article_news">新聞</p>
+                <time class="time">111-11-28</time>
+                <p class="para">【雲林縣】保護雲林毛小孩 防疫所與嘉義大學合作推動犬貓防疫及絕育工作</p>
+            </div>
+        </article>
+
+        <article class="all_el activity_el">
+            <div class="article_item">
+                <p class="article_activity">活動</p>
+                <time class="time">111-10-23</time>
+                <p class="para">【新竹市】萌翻天！竹市毛寶貝同樂會今登場 現場免費健檢飼主直呼好安心</p>
+            </div>
+        </article>
+
+        <article class="all_el activity_el">
+            <div class="article_item">
+                <p class="article_activity">活動</p>
+                <time class="time">111-10-11</time>
+                <p class="para">【新北市】淡水河畔情人碼頭舉辦「寵物情人 陪伴一生」活動</p>
+            </div>
+        </article>
+
+        <article class="all_el news_el">
+            <div class="article_item">
+                <p class="article_news">新聞</p>
+                <time class="time">111-8-04</time>
+                <p class="para">【臺南市】購買動物用藥品「停查看」拒絕來路不明黑心禁藥</p>
+            </div>
+        </article>
+
+        <article class="all_el news_el">
+            <div class="article_item">
+                <p class="article_news">新聞</p>
+                <time class="time">111-4-11</time>
+                <p class="para">【宜蘭縣】首座寵物公園落腳暖暖運動公園 預計明年六月前啟用</p>
+            </div>
+        </article>
+
+        <article class="all_el news_el">
+            <div class="article_item">
+                <p class="article_news">新聞</p>
+                <time class="time">111-1-11</time>
+                <p class="para">【桃園市】桃園市110年特定寵物業評鑑結果</p>
+            </div>
+        </article>
+
+        <!-- official -->
+
+        <article class="all_el official_el">
+            <div class="article_item">
+                <p class="article_official">官方</p>
+                <a href="https://www.tcapo.gov.taipei/" type="_blank">臺北市動物保護處</a>
+            </div>
+        </article>
+        
+        <article class="all_el official_el">
+            <div class="article_item">
+                <p class="article_official">官方</p>
+                <a href="https://www.ahiqo.ntpc.gov.tw/cht/index.php?" type="_blank">新北市政府動物保護防疫處</a>
+            </div>
+        </article>
+
+        <article class="all_el official_el">
+            <div class="article_item">
+                <p class="article_official">官方</p>
+                <a href="http://www.animal.taichung.gov.tw/" type="_blank">臺中市動物保護防疫處</a>
+            </div>
+        </article>
+
+        <article class="all_el official_el">
+            <div class="article_item">
+                <p class="article_official">官方</p>
+                <a href="https://ahipo.tainan.gov.tw/" type="_blank">臺南市動物防疫保護處</a>
+            </div>
+        </article>
+
+        <article class="all_el official_el">
+            <div class="article_item">
+                <p class="article_official">官方</p>
+                <a href="https://livestock.kcg.gov.tw/" type="_blank">高雄市動物保護處</a>
+            </div>
+        </article>
+
+        <article class="all_el official_el">
+            <div class="article_item">
+                <p class="article_official">官方</p>
+                <a href="http://animal.e-land.gov.tw/" type="_blank">宜蘭縣動植物防疫所</a>
+            </div>
+        </article>
+
+        <article class="all_el official_el">
+            <div class="article_item">
+                <p class="article_official">官方</p>
+                <a href="https://puppy.hccg.gov.tw/ch/index.jsp" type="_blank">新竹市動物保護及防疫所</a>
+            </div>
+        </article>
 
     </div>
 
-    <!-- activity -->
-    <div class="activity news">
-
-        <span class="rectangle"></span>
-        <div class="img_title">
-            <h1>活動專區</h1>
-            <img src="images/news_02.jpg" alt="">
-        </div>
-        <span class="vertical_line"></span>
-        <div class="activity_right news_right">
-            <h2>敬請期待！</h2>
-            <!-- <a href="#">See more</a> -->
-        </div>
-
-    </div>
-
-    <!-- search_announcement -->
-    <div class="search_announcement news">
-
-        <span class="rectangle"></span>
-        <div class="img_title">
-            <h1>協尋專區</h1>
-            <img src="images/news_03.png" alt="">
-        </div>
-        <span class="vertical_line"></span>
-        <div class="search_announcement news_right">
-            <ul>
-                <li><a href="https://www.ahiqo.ntpc.gov.tw/cht/index.php?" target="_blank"><i class="fa-solid fa-paw"></i> 新北市政府動物保護防疫處</a></li>
-                <li><a href="https://www.tcapo.gov.taipei/" target="_blank"><i class="fa-solid fa-paw"></i> 臺北市動物保護處</a></li>
-                <li><a href="https://apc.hsinchu.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 新竹縣動物保護防疫所</a></li>
-                <li><a href="https://www.tycg.gov.tw/animal/index.jsp" target="_blank"><i class="fa-solid fa-paw"></i> 桃園市政府動物保護處</a></li>
-                <li><a href="http://www.animal.taichung.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 臺中市動物保護防疫處</a></li>
-                <li><a href="https://ahipo.tainan.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 臺南市動物防疫保護處</a></li>
-                <li><a href="https://www.klaphio.klcg.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 基隆市動物保護防疫所</a></li>
-                <li><a href="https://livestock.kcg.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 高雄市動物保護處</a></li>
-                <li><a href="https://puppy.hccg.gov.tw/ch/index.jsp" target="_blank"><i class="fa-solid fa-paw"></i> 新竹市動物保護及防疫所</a></li>
-                <li><a href="http://animal.miaoli.gov.tw/animal_health/" target="_blank"><i class="fa-solid fa-paw"></i> 苗栗縣動物保護防疫所</a></li>
-                <li><a href="http://www.chcgadcc.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 彰化縣動物防疫所</a></li>
-                <li><a href="https://livestock.yunlin.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 雲林縣動植物防疫所</a></li>
-                <li><a href="http://animal.e-land.gov.tw/" target="_blank"><i class="fa-solid fa-paw"></i> 宜蘭縣動植物防疫所</a></li>
-            </ul>
-            <a href="#" class="see_more">See more</a>
-        </div>
-
-    </div>
+    
 
     <footer>
 
@@ -144,6 +206,8 @@
 
     </footer>
 
+
+    <script src="js/news.js"></script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
 
     
