@@ -313,7 +313,7 @@ article:hover{
     width: 280px;
     height: 250px;
     background-color: #9D8E7E;
-    opacity: .2;
+    opacity: .4;
 }
 
 .donate_info_card .donate_card{
@@ -406,7 +406,7 @@ article:hover{
     display: none;
     position: fixed;
     bottom: 10px;
-    right: 40px;
+    right: 20px;
     border-radius: 50px;
     border: none;
     cursor: pointer;
@@ -448,7 +448,7 @@ article:hover{
     }
 
     .front_page_banner h1{
-        font-size: 48px;
+        font-size: 46px;
         margin-left: 20px;
         
     }
@@ -497,6 +497,7 @@ article:hover{
 
     .news_release .news_release_left{
         margin: 0 auto;
+        width: 350px;
     }
 
     .news_release .news_release_left h1{
@@ -519,12 +520,14 @@ article:hover{
 
     /*-------------------- article --------------------*/
     .article_item{
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .article_item .para{
         padding-left: 0;
         margin-top: 5px;
+        text-align: justify;
+        padding: 0 15px;
     }
 
     .news_release .news_release_left_a{
@@ -547,7 +550,7 @@ article:hover{
 
     .search_announcement_right{
         margin: 0 auto;
-        width: 335px;
+        width: 350px;
     }
 
     .search_announcement_right h1{

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
     <title>Adoption</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
@@ -17,8 +18,13 @@
     <div class="top">
 
         <a href="index.html"><img src="images/logo.png" class="top_logo"></a>
-        <nav>
-            <ul>
+
+        <i class="fa-solid fa-bars nav_btn" id="nav_btn"></i>
+        
+        <a href="login.html" class="login_icon_a"><img src="images/login_icon.png"></a>
+        
+        <nav>        
+            <ul id="nav_bar">
                 <li><a href="intro.html">關於我們</a></li>
                 <li><a href="adoption.html">愛心領養</a></li>
                 <li><a href="giving_up.html">飼主送養</a></li>
@@ -31,6 +37,10 @@
         <a href="login.html" class="login">登入/註冊</a>
 
     </div>
+
+    <div id="cover"></div>
+
+    <span class="space"></span>
 
     <!-- adopt_banner -->
     <div class="adopt_banner">
@@ -104,6 +114,7 @@
             <h2>※ 此區的動物均由送養人刊登，所有送養人電話均經過簡訊驗證，如有任何領養問題請直接與送養人聯繫。</h2>
             <h2>※ 領養前請謹慎考慮，不隨意棄養。</h2>
         </div>
+        
     </div>
 
      <!-- pet_card -->
@@ -259,116 +270,67 @@
     </div>
 
     <button id="myBtn" class="to_top" title="Gotop">
-        <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-solid fa-arrow-up" id="arrow"></i>
     </button>
 
     <footer>
 
-        <!------------ bottom ------------>
-        <div class="bottom">
+        <div class="bottom_container">
 
-            <div class="bottom_left">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            <!------------ bottom ------------>
+            <div class="bottom">
+
+                <div class="bottom_left">
+                    <a href="index.html"><img src="images/logo.png" class="bottom_logo"></a>
+                    <p class="bottom_para">以前曾經領養過兩隻流浪貓，後來因為一些原因使得我無法繼續陪伴牠們長大，但是我對牠們的愛始終如初，特此建立此網站以表對待流浪動物的關愛，讓牠們都可以找到有愛的家。</p>
+                    <div class="bottom_icon">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="fast_nav">
+                    <ul>
+                        <li><a href="intro.html">關於我們</a></li>
+                        <li><a href="adoption.html">愛心領養</a></li>
+                        <li><a href="giving_up.html">飼主送養</a></li>
+                        <li><a href="contact_us.html">聯絡我們</a></li>
+                        <li><a href="donate.html">善心贊助</a></li>
+                    </ul>
+                </div>
+
+                <div class="bottom_right">
+                    <img src="images/qrcode.jpg" class="qrcode">
+                    <p>如果有任何建議與合作</p>
+                    <p>歡迎來信：vanishing0718@gmail.com</p>
+                    <p class="copyright_2023">Copyright © 2023 浪愛  All rights reserved</p>    
+                    <!-- <ul>
+                        <li><a href="https://www.afurkid.com/" target="_blank">· Afurkid 毛小孩寵物資訊</a></li>
+                        <li><a href="https://wepet.tw/" target="_blank">· WePet 寵物資訊平台</a></li>
+                        <li><a href="https://www.pet.gov.tw/index.aspx" target="_blank">· 全國動物收容資訊網</a></li>
+                        <li><a href="http://www.meetpets.org.tw/" target="_blank">· 台灣認養地圖</a></li>
+                    </ul> -->
+                </div>
+
             </div>
 
-            <div class="bottom_right">
-                <ul>
-                    <li><a href="https://www.afurkid.com/" target="_blank">· Afurkid 毛小孩寵物資訊</a></li>
-                    <li><a href="https://wepet.tw/" target="_blank">· WePet 寵物資訊平台</a></li>
-                    <li><a href="https://www.pet.gov.tw/index.aspx" target="_blank">· 全國動物收容資訊網</a></li>
-                    <li><a href="http://www.meetpets.org.tw/" target="_blank">· 台灣認養地圖</a></li>
-                </ul>
-            </div>
-            
+            <p class="copyright_2023 copyright_rwd">Copyright © 2023 浪愛  All rights reserved</p> 
+
         </div>
 
-        <p class="copyright">
-            參考資源：Afurkid、WePet、全國動物收容資訊網、台灣認養地圖。<br>
-            本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。
-        </p> 
-
+        <div class="copyright_container">
+            <p class="copyright">參考資源：Afurkid、WePet、全國動物收容資訊網、台灣認養地圖</p>
+            <p class="copyright">本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用</p>
+            <p class="copyrightrwd">本平台僅供學習、展示之用</p>
+            <p class="copyrightrwd">本網站為緯育TibaMe前端工程師班第82期學員專題作品</p>
+        </div>
+          
     </footer>
 
-    <script>
-        
-        // function allBtn(){
-        //     var pet_card = document.querySelectorAll('.pet_card');
-        //     var all_focus = document.querySelector('.cat_dog_all');
-        //     for(let i = 0; i < pet_card.length; i++){
-        //         if(pet_card[i].classList.contains('display_none')){
-        //             pet_card[i].classList.remove('display_none');
-        //             all_focus.classList.remove('unfocus');
-        //         }else{
-        //             pet_card[i].classList.add('display_none');
-        //             all_focus.classList.add('unfocus');
-        //         };
-        //     };
-        // };
-
-        // function catBtn(){
-        //     var all_dog_card = document.querySelectorAll('.dog_card');
-        //     var cat_focus = document.querySelector('.cat_dog_cat');
-        //     for(let i = 0; i < all_dog_card.length; i++){
-        //         if(all_dog_card[i].classList.contains('display_none')){
-        //             all_dog_card[i].classList.remove('display_none');
-        //             cat_focus.classList.remove('focus');
-        //         }else{
-        //             all_dog_card[i].classList.add('display_none');
-        //             all_dog_card[i].classList.remove('focus');
-        //             cat_focus.classList.add('focus');
-        //         };
-        //     };
-
-        //     if(all_dog_card.classList.contains('focus')){
-        //         all_dog_card[i].classList.remove('focus');
-        //     }else{
-
-        //     };
-        // };
-
-        // function dogBtn(){
-        //     var all_cat_card = document.querySelectorAll('.cat_card');
-        //     var dog_focus = document.querySelector('.cat_dog_dog');
-        //     for(let i = 0; i < all_cat_card.length; i++){
-        //         if(all_cat_card[i].classList.contains('display_none')){
-        //             all_cat_card[i].classList.remove('display_none');
-        //             dog_focus.classList.remove('focus');
-        //         }else{
-        //             all_cat_card[i].classList.add('display_none');
-        //             all_cat_card[i].classList.remove('focus');
-        //             dog_focus.classList.add('focus');
-        //         };
-        //     };
-        // };
-
-
-        window.onscroll = scrollFunction;
-        function scrollFunction(){ 
-            if(document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
-                document.getElementById("myBtn").style.display = "block";
-            }else{
-            document.getElementById("myBtn").style.display = "none";
-        }};
-
-        // function topFunction(){
-        // document.body.scrollTop = 0;
-        // document.documentElement.scrollTop = 0;
-        // behavior = "smooth"
-        // }
-
-        var toTop = document.getElementById("myBtn");
-        toTop.addEventListener('click',function(){
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        })
-
-    </script>
     <script src="js/adoption.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
 
 </body>

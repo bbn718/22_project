@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
     <title>news</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
@@ -12,12 +13,17 @@
 </head>
 <body>
 
-    <!-- top_nav -->
+    <!------------ top_nav ------------>
     <div class="top">
 
         <a href="index.html"><img src="images/logo.png" class="top_logo"></a>
+
+        <i class="fa-solid fa-bars nav_btn" id="nav_btn"></i>
+        
+        <a href="login.html" class="login_icon_a"><img src="images/login_icon.png"></a>
+
         <nav>
-            <ul>
+            <ul id="nav_bar">
                 <li><a href="intro.html">關於我們</a></li>
                 <li><a href="adoption.html">愛心領養</a></li>
                 <li><a href="giving_up.html">飼主送養</a></li>
@@ -31,7 +37,11 @@
 
     </div>
 
-    <!-- breadcrumb -->
+    <div id="cover"></div>
+
+    <span class="space"></span>
+
+    <!------------ breadcrumb ------------>
     <nav class="breadcrumb">
         <ul>
             <li><a href="index.html">首頁</a></li>
@@ -45,7 +55,7 @@
         <h1>最新消息</h1>
         <span class="pinkline"></span>
 
-        <!-- news_title -->
+        <!------------ news_title ------------>
         <div class="news_title">
             <ul>
                 <li class="focus" id="all">全部消息</li>
@@ -55,13 +65,13 @@
             </ul>
         </div>
 
-        <!-- article -->
+        <!------------ article ------------>
 
         <article>
             <div class="article_item">
                 <p class="article_top">置頂</p>
                 <time class="time">112-01-11</time>
-                <p class="para">【臺北市】112年度狂犬病疫苗及晶片巡迴注射行程</p>
+                <p class="para">【臺北市】112 年度狂犬病疫苗及晶片巡迴注射行程</p>
             </div>
         </article>
 
@@ -69,7 +79,7 @@
             <div class="article_item">
                 <p class="article_news">新聞</p>
                 <time class="time">111-12-03</time>
-                <p class="para">【雲林縣】觀音區台66線私人狗園涉虐狗致死 動保處將追查開罰</p>
+                <p class="para">【雲林縣】觀音區台 66 線私人狗園涉虐狗致死 動保處將追查開罰</p>
             </div>
         </article>
 
@@ -117,11 +127,11 @@
             <div class="article_item">
                 <p class="article_news">新聞</p>
                 <time class="time">111-1-11</time>
-                <p class="para">【桃園市】桃園市110年特定寵物業評鑑結果</p>
+                <p class="para">【桃園市】桃園市 110 年特定寵物業評鑑結果</p>
             </div>
         </article>
 
-        <!-- official -->
+        <!------------ official ------------>
 
         <article class="all_el official_el">
             <div class="article_item">
@@ -199,36 +209,63 @@
 
     <footer>
 
-        <!------------ bottom ------------>
-        <div class="bottom">
+        <div class="bottom_container">
 
-            <div class="bottom_left">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            <!------------ bottom ------------>
+            <div class="bottom">
+
+                <div class="bottom_left">
+                    <a href="index.html"><img src="images/logo.png" class="bottom_logo"></a>
+                    <p class="bottom_para">以前曾經領養過兩隻流浪貓，後來因為一些原因使得我無法繼續陪伴牠們長大，但是我對牠們的愛始終如初，特此建立此網站以表對待流浪動物的關愛，讓牠們都可以找到有愛的家。</p>
+                    <div class="bottom_icon">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="fast_nav">
+                    <ul>
+                        <li><a href="intro.html">關於我們</a></li>
+                        <li><a href="adoption.html">愛心領養</a></li>
+                        <li><a href="giving_up.html">飼主送養</a></li>
+                        <li><a href="contact_us.html">聯絡我們</a></li>
+                        <li><a href="donate.html">善心贊助</a></li>
+                    </ul>
+                </div>
+
+                <div class="bottom_right">
+                    <img src="images/qrcode.jpg" class="qrcode">
+                    <p>如果有任何建議與合作</p>
+                    <p>歡迎來信：vanishing0718@gmail.com</p>
+                    <p class="copyright_2023">Copyright © 2023 浪愛  All rights reserved</p>    
+                    <!-- <ul>
+                        <li><a href="https://www.afurkid.com/" target="_blank">· Afurkid 毛小孩寵物資訊</a></li>
+                        <li><a href="https://wepet.tw/" target="_blank">· WePet 寵物資訊平台</a></li>
+                        <li><a href="https://www.pet.gov.tw/index.aspx" target="_blank">· 全國動物收容資訊網</a></li>
+                        <li><a href="http://www.meetpets.org.tw/" target="_blank">· 台灣認養地圖</a></li>
+                    </ul> -->
+                </div>
+
             </div>
 
-            <div class="bottom_right">
-                <ul>
-                    <li><a href="https://www.afurkid.com/" target="_blank">· Afurkid 毛小孩寵物資訊</a></li>
-                    <li><a href="https://wepet.tw/" target="_blank">· WePet 寵物資訊平台</a></li>
-                    <li><a href="https://www.pet.gov.tw/index.aspx" target="_blank">· 全國動物收容資訊網</a></li>
-                    <li><a href="http://www.meetpets.org.tw/" target="_blank">· 台灣認養地圖</a></li>
-                </ul>
-            </div>
-            
+            <p class="copyright_2023 copyright_rwd">Copyright © 2023 浪愛  All rights reserved</p> 
+
         </div>
 
-        <p class="copyright">
-            參考資源：Afurkid、WePet、全國動物收容資訊網、台灣認養地圖。<br>
-            本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。
-        </p> 
-
+        <div class="copyright_container">
+            <p class="copyright">參考資源：Afurkid、WePet、全國動物收容資訊網、台灣認養地圖</p>
+            <p class="copyright">本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用</p>
+            <p class="copyrightrwd">本平台僅供學習、展示之用</p>
+            <p class="copyrightrwd">本網站為緯育TibaMe前端工程師班第82期學員專題作品</p>
+        </div>
+          
     </footer>
 
 
     <script src="js/news.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/07e5e5e602.js" crossorigin="anonymous"></script>
 
     

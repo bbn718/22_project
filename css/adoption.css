@@ -26,7 +26,7 @@
 }
 
 .adopt_banner .banner_pinkline{
-    /* display: inline-block; */
+    display: none;
     background-color: #FFB7B7;
     width: 380px;
     height: 5px;
@@ -226,10 +226,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    font-weight: bold;
 }
 
 .page_button a:not(:first-child, :last-child){
-    /* color: #000; */
+    color: #000;
     display: block;
     width: 30px;
     height: 30px;
@@ -238,8 +239,8 @@
     text-decoration: none;
 }
 
-.color{
-    color: #fff;
+.page_button .color{
+    color: #fff!important;
     background-color: #9D8E7E;
 }
 
@@ -257,6 +258,7 @@
 .arrow{
     width: 30px;
     height: 30px;
+    color: #fff;
     background-color: #9D8E7E;
 }
 
@@ -288,14 +290,15 @@
     left: 11px;
 }
 
+
+/*-------------------- to_top --------------------*/
 .to_top{
     display: none;
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 20px;
     border-radius: 50px;
     border: none;
-    opacity: .5;
     cursor: pointer;
     color: #fff;
     background-color: #9D8E7E;
@@ -307,4 +310,137 @@
 .to_top:hover{
     transition: .5s;
     transform: scale(1.1);
+}
+
+#arrow{
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+@media screen and (max-width: 428px){
+
+    /*-------------------- front_page_banner --------------------*/
+    .adopt_banner{
+        width: auto;
+        background-position:80% 100%;
+        height: 560px;
+        padding: 0;
+        padding-top: 60px;
+        padding-right: 30px;
+    }
+
+    .adopt_banner h1{
+        font-size: 46px;
+    }
+
+    .adopt_banner h2{
+        font-size: 32px;
+    }
+
+
+    /*-------------------- search_area --------------------*/
+    .search_area{
+        width: auto;
+        padding: 0 30px;
+    }
+
+
+    /*-------------------- cat_dog --------------------*/
+
+
+    /*-------------------- search --------------------*/
+    .search{
+        flex-direction: column;
+    }
+
+    /*-------------------- adopt_announcement --------------------*/
+    .adopt_announcement{
+        width: auto;
+    }
+
+    /*-------------------- pet_card --------------------*/
+    .pet_card_area{
+        width: auto;
+        /* flex-direction: column; */
+    }
+
+    .pet_card{
+        margin-top: 0;
+    }
+
+    .pet_card .rectangle{
+        width: 180px;
+        height: 170px;
+    }
+
+    .pet_card img{
+        width: 192px;
+        height: 170px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .pet_card .vertical_line{
+        height: 170px;
+        width: 1px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .pet_card .pet_card_right{
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .pet_card .pet_card_right h3{
+        margin-left: 10px;
+        font-size: 12px;
+        line-height: 1.2;
+        margin-top: 10px;
+    }
+
+    .pet_card .pet_card_right h3:first-child{
+        margin-top: 20px;
+    }
+
+    .pet_card .pet_card_right a{
+        width: 60px;
+        font-size: 12px;
+        height: 27px;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+
+    /*-------------------- page_button --------------------*/
+    .page_button{
+        width: auto;
+        padding: 0 30px;
+    }
+
+    .page_button a:nth-child(-n+8):nth-child(n+6){
+        display: none;
+    }
+
+    .page_button a:nth-last-child(3){
+        display: none;
+    }
+
+    /*-------------------- to_top --------------------*/
+    .to_top{
+        width: 25px;
+        height: 25px;
+        bottom: 13px;
+    }
+
+    #arrow{
+        font-size: 12px;
+    }
 }

@@ -59,7 +59,7 @@
     left: 0;
     right: 0;
     top: 0;
-    bottom: 1px;
+    bottom: 0;
     margin: auto;
 }
 
@@ -79,7 +79,7 @@
     cursor: pointer;
 }
 
-.cover{
+.cover1{
     display: none;/* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 0; /* Sit on top */
@@ -102,7 +102,7 @@
 }
 
 .is-active{
-    animation: popup .7s;
+    animation: popup .3s;
     transform: scale(1);
 }
 
@@ -133,4 +133,76 @@
     width: 300px;
     height: 500px;
     background-position: 100% 50%;
+}
+
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+@media screen and (max-width: 428px){
+
+    /*-------------------- content --------------------*/
+    .content{
+        width: auto;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .content > div:not(:last-child){
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .content div:not(:last-child){
+
+    }
+
+    .line_pay_bg{
+        width: 280px;
+        height: 420px;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-position: 100% 20%;
+    }
+    
+    .bank_transfer_bg{
+        width: 280px;
+        height: 420px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 48%;
+    }
+    
+    .cash_donate_bg{
+        width: 280px;
+        height: 420px;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-position: 100% 45%;
+    }
+
+    .content .btn_open{
+        font-size: 14px;
+        width: 80px;
+        height: 35px;
+        line-height: 35px;
+        margin-top: 15px;
+    }
+
+    .content div:nth-child(3){
+        margin-bottom: 0;
+    }
+
+
+    /*-------------------- popup --------------------*/
+    .content .container{
+        width: 300px;
+        height: 150px;
+    }
+
+    .content .container p{
+        font-size: 36px;
+        line-height: 150px;
+    }
+
 }

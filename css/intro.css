@@ -120,3 +120,152 @@
     font-weight: bold;
     /* line-height: 1.2; */
 }
+
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+@media screen and (max-width: 428px){
+
+    .vertical_line{
+        margin-left: 60px;
+        width: 3px;
+        /* display: none; */
+    }
+    
+    /*-------------------- web_idea --------------------*/
+    .web_idea{
+        width: auto;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .web_idea img{
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .web_idea_right{
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .web_idea_right .web_idea_right_title{
+        margin-left: 60px;
+        padding-right: 3px;
+        /* display: block; */
+        float: left;
+    }
+
+    .web_idea_right .web_idea_right_title .vertical_line1{
+        order: 1;
+        margin: 0;
+    }
+
+    .web_idea_right h1{
+        writing-mode: vertical-lr;
+        order: 2;
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .web_idea_right p{
+        color: #9D8E7E;
+        font-size: 18px;
+        margin: 0;
+        padding: 0 60px;
+        text-align: justify;
+    }
+
+    /*-------------------- logo_design --------------------*/
+    .logo_design{
+        width: auto;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .logo_design_left{
+        order: 2;
+        width: auto;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0 60px;
+    }
+
+    .logo_design_left_title{
+        float: left;
+        padding-right: 3px;
+    }
+
+    .logo_design_left_title .vertical_line2{
+        order: 1;
+        margin: 0;
+    }
+
+    .logo_design_left_title h1{
+        writing-mode: vertical-lr;
+        margin: 0;
+        font-size: 28px;
+        order: 2;
+    }
+
+    .logo_design_left p{
+        margin: 0;
+        font-size: 18px;
+        color: #9D8E7E;
+        text-align: justify;
+    }
+
+    .logo_design > img{
+        order: 1;
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /*-------------------- web_target --------------------*/
+    .web_target{
+        width: auto;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .web_target > img{
+        width: 300px;
+        order: 1;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .web_target_right{
+        width: auto;
+        order: 2;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0 60px;
+    }
+
+    .web_target_right_title{
+        float: left;
+        padding-right: 3px;
+    }
+
+    .web_target_right_title .vertical_line3{
+        margin: 0;
+    }
+
+    .web_target_right_title h1{
+        writing-mode: vertical-lr;
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .web_target_right p{
+        margin: 0;
+        font-size: 18px;
+        color: #9D8E7E;
+        text-align: justify;
+    }
+}

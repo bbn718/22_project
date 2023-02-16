@@ -105,3 +105,45 @@ textarea{
     background-color: #9D8E7E;
     transition: .5s;
 }
+
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+@media screen and (max-width: 428px){
+
+    /*-------------------- content --------------------*/
+    .content{
+        width: auto;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .content iframe{
+        width: 100%;
+        height: 255px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .form{
+        width: auto;
+    }
+
+    .form label{
+        padding-top: 30px;
+    }
+
+    .form input[type="text"], .form input[type="email"]{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 40px;
+    }
+
+    .form > textarea{
+        width: 100%;
+        height: 120px;
+    }
+
+
+}

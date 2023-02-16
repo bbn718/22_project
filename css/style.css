@@ -317,7 +317,8 @@ body{
         opacity: .1;
         width: 100%;
         height: calc(100vh);
-        position: absolute;
+        position: fixed;
+        z-index: 9;
     }
 
     .login_icon_a{
@@ -337,20 +338,15 @@ body{
         transform: translate(-50%, -50%);
     }
 
-    /* .top .nav_btn:hover ~ nav ul{
-        right: 0;
-        transition: all .5s;
-    } */
-
     .top ul{
         display: block;
-        /* border: 1px solid red; */
         width: 300px;
         background-color: #fff;
         position: absolute;
         top: 80px;
         right: -300px;
         transition: all .5s;
+        z-index: 1000;
     }
 
     .top ul li{
@@ -368,11 +364,22 @@ body{
         display: none;
     }
 
+    /*-------------------- breadcrumb --------------------*/
+    .breadcrumb{
+        width: auto;
+        margin-left: 60px;
+    }
+
+    .breadcrumb ul{
+        margin-top: 20px;
+    }
+
     /*-------------------- bottom --------------------*/
     .bottom_container{
         width: auto;
         padding-top: 30px;
         padding-bottom: 0px;
+        margin-top: 80px;
     }
 
     .bottom{
@@ -415,6 +422,10 @@ body{
         padding: 0 10px;
     }
 
+    .bottom .fast_nav li a{
+        font-size: 18px;
+    }
+
     .bottom .fast_nav li:not(:last-child){
         border-right: 1px solid #ccc;
     }
@@ -427,7 +438,6 @@ body{
     }
 
     .bottom .bottom_right{
-        /* display: none; */
         order: 2;
         width: auto;
         margin: 0 auto;
