@@ -15,11 +15,21 @@ search_button.addEventListener('click', e => {
 
 for(let i = 0; i < select.length; i++){
     select[i].addEventListener('change', e => {
-        if(select[i] == ''){
+        if(select[i].selectedIndex == ''){
             select[i].style.cssText = 'border-color: red;';
         }else{
             select[i].style.borderColor = '';
         };
+    });
+};
+
+for(let i = 0; i < select.length; i++){
+    select[i].addEventListener('blur', e => {
+            if(select[i].selectedIndex == ''){
+                select[i].style.cssText = 'border-color: red;';
+            }else{
+                select[i].style.borderColor = '';
+            };
     });
 };
 
@@ -122,14 +132,14 @@ dog_btn.addEventListener('click', function(){
 
 
 /****************** page_button function ******************/
+let page = document.querySelectorAll('.page');
+
 document.addEventListener('click', e => {
     if(e.target.classList.contains('page') || e.target.classList.contains('arrow')){
 
         e.preventDefault();
-        let page = document.querySelectorAll('.page');
         
-        for(let i = 0; i < page.length; i++){
-            
+        for(let i = 0; i < page.length; i++){            
             if(page[i].classList.contains('color')){
                 page[i].classList.remove('color');
             };
@@ -138,7 +148,17 @@ document.addEventListener('click', e => {
         if(e.target.classList.contains('color') == false){
             e.target.classList.add('color');
         };
+    };
+});
 
+let pre = document.getElementById('pre');
+let next = document.getElementById('next');
+
+pre.addEventListener('click', e => {
+    for(let i = 0; i < page.length; i++){
+        if(page[i].classList.contains('color')){
+            page[i].classList.remove('color');
+        };
     };
 });
 
@@ -172,3 +192,4 @@ window.addEventListener('scroll', function(){
         arrow.style.color = '';
     };
 });
+

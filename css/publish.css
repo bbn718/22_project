@@ -217,7 +217,7 @@ input[type="checkbox"]{
 }
 
 /*-------------------- alert --------------------*/
-.cover{
+.cover1{
     display: none;
     position: fixed; 
     z-index: 0; 
@@ -234,7 +234,6 @@ input[type="checkbox"]{
 .alert{
     background-color: #fff;
     display: none;
-    /* display: inline-block; */
     height: 100px;
     border-radius: 10px;
     padding: 0 20px;
@@ -267,6 +266,7 @@ input[type="checkbox"]{
 /*-------------------- RWD (428px) --------------------*/
 /*-------------------- RWD (428px) --------------------*/
 @media screen and (max-width: 428px){
+
     /*-------------------- publish_form --------------------*/
     .publish_form{
         width: auto;
@@ -328,9 +328,17 @@ input[type="checkbox"]{
         line-height: 30px;
     }
 
+    /*-------------------- alert --------------------*/
+    .alert{
+        height: 150px;
+        width: 320px;
+        padding: 20px;
+    }
 
-
-
-
+    .alert > span{
+        font-size: 15px;
+        line-height: 1.6;   
+        margin-bottom: 30px;
+    }
 
 }

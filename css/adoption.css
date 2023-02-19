@@ -147,11 +147,11 @@
 
 /*-------------------- pet_card --------------------*/
 .pet_card_area{
-    width: calc(95%);
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-between; */
 }
 
 .pet_card{
@@ -161,6 +161,10 @@
     /* height: 350px; */
     display: flex;
     padding: 40px 20px 10px 20px;
+}
+
+.pet_card:last-child{
+    /* flex-grow: 1; */
 }
 
 .pet_card .rectangle{
@@ -195,7 +199,7 @@
     margin-top: 20px;
     margin-left: 20px;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 .pet_card_right a{
@@ -208,9 +212,8 @@
     font-size: 14px;
     line-height: 30px;
     text-decoration: none;
-    margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 10px;
+    margin-top: 30px;
+    border-radius: 5px;
     text-align: center;
     transition: .5s;
 }
@@ -392,7 +395,7 @@
         height: auto;
         font-size: 14px;
         margin-top: 10px;
-        padding: 15px;
+        padding: 10px;
     }
 
     .adopt_announcement h2:nth-child(1){
@@ -428,7 +431,7 @@
         height: 170px;
         width: 1px;
         margin-left: 10px;
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .pet_card .pet_card_right{
@@ -450,9 +453,10 @@
     .pet_card .pet_card_right a{
         width: 60px;
         font-size: 12px;
-        height: 25px;
-        line-height: 25px;
+        height: 20px;
+        line-height: 20px;
         margin-top: 20px;
+        margin-left: 10px;
     }
 
     /*-------------------- page_button --------------------*/

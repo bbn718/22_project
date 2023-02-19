@@ -35,3 +35,25 @@ $(`textarea`).focus(function(){
     };
 });
 
+/************** 送出 click 事件 **************/
+let submit = document.querySelector('button');
+let name1 = document.getElementById('name');
+let email = document.getElementById('email');
+let content = document.getElementById('content');
+
+submit.addEventListener('click', e => {
+    if(name1.value == ''){
+        name1.style.cssText = 'border: 2px solid red;';
+    };
+    if(email.value == ''){
+        email.style.cssText = 'border: 2px solid red;';
+    };
+    if(content.value == ''){
+        content.style.cssText = 'border: 2px solid red;';
+    };
+    if(name1.value == 0 || email.value == '' || content.value == ''){
+        alert('請勿留空！');
+    }else{
+        alert('已收到您的消息！感謝回饋^_^')
+    };
+});

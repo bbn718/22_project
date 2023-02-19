@@ -29,19 +29,11 @@ $(`login_account`).click(function(){
 /*********************** input alert ***********************/
 let input = document.querySelectorAll('input');
 let login_btn = document.getElementById('login_account')
-let count1 = 0;
 
-// for(let i = 0; i < input.length; i++){
-//     input[i].addEventListener('click', e => {
-//         if(input[i].value == ''){
-//             input[i].style.cssText = 'border: 1px solid red;';
-//         }else{
-//             input[i].style.cssText = '';
-//         };
-//     });
-// };
 
 login_btn.addEventListener('click', e => {
+    e.preventDefault();
+    let count1 = 0;
     for(let i = 0; i < input.length; i++){
         if(input[i].value == ''){
             count1++;
@@ -50,6 +42,20 @@ login_btn.addEventListener('click', e => {
     if(count1 > 0){
         alert(`請確認您已輸入帳號及密碼
         共有 ${count1} 筆資料尚未輸入`);
+        for(let i = 0; i < input.length; i++){
+            if(input[i].value == ''){
+                input[i].style.cssText = 'border-color: red;';
+            }else{
+                input[i].style.borderColor = '';
+            };
+        };
     };
 });
 
+
+/*********************** input alert ***********************/
+let find_password = document.getElementById('find_password');
+find_password.addEventListener('click', e => {
+    e.preventDefault();
+    alert('系統維護中，敬請諒解！');
+});

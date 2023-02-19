@@ -1,79 +1,92 @@
 /******************** 表單輸入時 placehoder 消失 ********************/
-$(`input[type="text"]`).focus(function(){
-    $(this).attr('placeholder', '')
-    if($(this).css({borderBottom: '2px solid red',})){
-        $(this).attr('style', '');
-    };
-}).blur(function(){
-    if($(this).val() == ''){
-        $(this).attr('placeholder','請輸入')
-        $(this).css({
-            borderBottom: '2px solid red',
-        });
-    }else{
-        $(this).attr('style', '');
-    };
-});
+$(document).ready(function(){
+    $(`input[type="text"]`).focus(function(){
+        $(this).attr('placeholder', '')
+        if($(this).css({borderBottom: '2px solid red',})){
+            $(this).attr('style', '');
+        };
+    }).blur(function(){
+        if($(this).val() == ''){
+            $(this).attr('placeholder','請輸入')
+            $(this).css({
+                borderBottom: '2px solid red',
+            });
+        }else{
+            $(this).attr('style', '');
+        };
+    });
+    
+    $(`input[type="email"]`).focus(function(){
+        $(this).attr('placeholder', '')
+    }).blur(function(){
+        if($(this).val() == ''){
+            $(this).attr('placeholder','請輸入')
+        };
+    });
+    
+    $(`input[type="number"]`).focus(function(){
+        $(this).attr('placeholder', '')
+        if($(this).css({borderBottom: '2px solid red',})){
+            $(this).attr('style', '');
+        };
+    }).blur(function(){
+        if($(this).val() == ''){
+            $(this).attr('placeholder','請輸入')
+            $(this).css({
+                borderBottom: '2px solid red',
+            });
+        }else{
+            $(this).attr('style', '');
+        };
+    });
 
-$(`input[type="email"]`).focus(function(){
-    $(this).attr('placeholder', '')
-}).blur(function(){
-    if($(this).val() == ''){
-        $(this).attr('placeholder','請輸入')
-    };
-});
-
-$(`input[type="number"]`).focus(function(){
-    $(this).attr('placeholder', '')
-    if($(this).css({borderBottom: '2px solid red',})){
-        $(this).attr('style', '');
-    };
-}).blur(function(){
-    if($(this).val() == ''){
-        $(this).attr('placeholder','請輸入')
-        $(this).css({
-            borderBottom: '2px solid red',
-        });
-    }else{
-        $(this).attr('style', '');
-    };
-});
-
-$('select').focus(function(){
-    if($(this).css({
-        border: '1px solid red',
-    })){
-        $(this).attr('style', '');
-    };
-}).blur(function(){
-    if($(this).val() == '1'){
-        $(this).css({
+    $(`input[type="file"]`).blur(function(){
+        if(this.files.length == 0){
+            $(this).css({
+                color: 'red',
+            });
+        }else{
+            $(this).attr('style', '');
+        };
+    });
+    
+    $('select').focus(function(){
+        if($(this).css({
             border: '1px solid red',
-        });
-    }else{
-        $(this).attr('style', '');
-    };
+        })){
+            $(this).attr('style', '');
+        };
+    }).blur(function(){
+        if($(this).val() == '1'){
+            $(this).css({
+                border: '1px solid red',
+            });
+        }else{
+            $(this).attr('style', '');
+        };
+    });
+    
+    $(`textarea`).focus(function(){
+        $(this).attr('placeholder', '')
+    }).blur(function(){
+        if($(this).val() == ''){
+            $(this).attr('placeholder','請輸入')
+        };
+    });
+    
+    // $('#other').focus().blur(function(){
+    //     if($(this).val().length == 0){
+    //         $('#name_para').html('');
+    //     };
+    // });
+    
+    // $('#adopt').focus().blur(function(){
+    //     if($(this).val().length == 0){
+    //         $('#adopt_para').html('');
+    //     };
+    // });
 });
 
-$(`textarea`).focus(function(){
-    $(this).attr('placeholder', '')
-}).blur(function(){
-    if($(this).val() == ''){
-        $(this).attr('placeholder','請輸入')
-    };
-});
-
-$('#other').focus().blur(function(){
-    if($(this).val().length == 0){
-        $('#name_para').html('');
-    };
-});
-
-$('#adopt').focus().blur(function(){
-    if($(this).val().length == 0){
-        $('#adopt_para').html('');
-    };
-});
 /******************** textarea 下顯示剩餘可輸入字數 ********************/
 $(function(){
     let otherTextMax = $('#other').attr('maxlength');
@@ -98,6 +111,7 @@ $(function(){
 
 
 /******************** 表單送出未打勾則跳出彈窗 ********************/
+let cover1 = document.getElementById('cover1');
 let alert_el = document.getElementById('alert');
 let send = document.getElementById('send');
 let body = document.querySelector('body');
@@ -105,9 +119,10 @@ let check = document.getElementById('checkbox');
 let input_val = document.querySelectorAll('input');
 let input_text_val = document.querySelectorAll('input[type=text]');
 let input_num_val = document.querySelector('input[type=number]');
-let textarea_val = document.querySelectorAll('textarea');
+// let textarea_val = document.querySelectorAll('textarea');
 let select_val = document.querySelectorAll('select');
 let input_file_val = document.querySelector('input[type=file]');
+let textarea = document.querySelectorAll('textarea')[1];
 
 send.addEventListener('click', e => {
 
@@ -124,7 +139,7 @@ send.addEventListener('click', e => {
 
     if((check.checked) && (isInvalid == false)){
         alert_el.style.display = 'inline-block';
-        cover.style.display = 'block';
+        cover1.style.display = 'block';
         body.style.overflow = 'hidden';
         setTimeout(function(){
             window.location.assign('../index.html')
@@ -154,11 +169,11 @@ send.addEventListener('click', e => {
         if(input_num_val.value == ''){
             input_num_val.style.cssText = 'border-bottom: 2px solid red;';
         }
-        for(let i = 0; i < textarea_val.length; i++){
-            if(textarea_val[0].value == ''){
-                textarea_val[0].style.cssText = 'border: 1px solid red;';
-            };
-        };
+        // for(let i = 0; i < textarea_val.length; i++){
+        //     if(textarea_val[0].value == ''){
+        //         textarea_val[0].style.cssText = 'border: 1px solid red;';
+        //     };
+        // };
         for(let i = 0; i < select_val.length; i++){
             if(select_val[i].selectedIndex == ''){
                 select_val[i].style.cssText = 'border: 1px solid red;';
@@ -175,15 +190,4 @@ send.addEventListener('click', e => {
 
 });
 
-
-
-// document.addEventListener('click', e => {
-//     if(e.target.classList.contains('cover')){
-//         alert_el.style.display = 'none';
-//         cover.style.display = 'none';
-//         body.style.overflow = 'auto';
-//     };
-// });
-
-
-/******************** 表單送出未打勾則跳出彈窗 ********************/
+textarea.removeAttribute('autofocus');

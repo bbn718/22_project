@@ -22,5 +22,5 @@ document.addEventListener('click', e => {
         login_register.style.display = 'none';
         cover1.style.display = 'none';
         body.style.overflow = 'auto';
-    }
-})
+    };
+});
