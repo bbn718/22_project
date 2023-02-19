@@ -1,5 +1,5 @@
 /*-------------------- publish_step --------------------*/
-.publish_step{
+/* .publish_step{
     width: 750px;
     margin: 0 auto;
     display: flex;
@@ -39,7 +39,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 /*-------------------- publish_form --------------------*/
 .publish_form{
@@ -85,7 +85,7 @@
     padding-bottom: 10px;
     padding-left: 10px;
     font-size: 16px;
-    width: 150px;
+    width: 120px;
 }
 
 .publish_form_left .name select{
@@ -189,6 +189,7 @@ textarea::placeholder, input::placeholder{
 input[type="checkbox"]{
     width: 30px;
     height: 15px;
+    background-color: #000;
 }
 
 .publish_form_right button{
@@ -258,4 +259,78 @@ input[type="checkbox"]{
     font-weight: bold;
     text-align: center;
     line-height: 50px;
+}
+
+
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+@media screen and (max-width: 428px){
+    /*-------------------- publish_form --------------------*/
+    .publish_form{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5px;
+    }
+    /*-------------------- publish_form_left --------------------*/
+    .publish_form_left{
+        width: 360px;
+    }
+
+    .publish_form_left h2{
+        width: 360px;
+    }
+
+    .publish_form_left .name{
+        font-size: 18px;
+        flex-basis: 300px;
+        margin-top: 20px;
+    }
+
+    /* .publish_form_left .name:nth-child(4){
+        flex-basis: 300px;
+    } */
+
+    .publish_form_left .name h3{
+
+    }
+
+    .publish_form_left .name .underLineStyle {
+        width: 300px;
+    }
+
+    .publish_form_left .name select{
+        width: 100%;
+        flex-grow: 1;
+    }
+
+
+    textarea{
+        width: 310px;
+        margin: 0 auto;
+    }
+
+    /*-------------------- publish_form_right --------------------*/
+    .publish_form_right_rule{
+        width: 360px;
+        margin-top: 30px;
+    }
+    
+    .publish_form_right_rule h2{
+        width: 360px;
+    }
+
+    .publish_form_right button{
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+
+
+
+
+
 }

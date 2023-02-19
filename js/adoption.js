@@ -1,3 +1,29 @@
+/****************** search function ******************/
+let search_button = document.getElementById('search_button');
+let select = document.querySelectorAll('select');
+
+search_button.addEventListener('click', e => {
+    for(let i = 0; i < select.length; i++){
+        if(select[i].selectedIndex == ''){
+            select[i].style.cssText = 'border-color: red;';
+        }else{
+            select[i].style.borderColor = '';
+        };
+    };
+});
+
+
+for(let i = 0; i < select.length; i++){
+    select[i].addEventListener('change', e => {
+        if(select[i] == ''){
+            select[i].style.cssText = 'border-color: red;';
+        }else{
+            select[i].style.borderColor = '';
+        };
+    });
+};
+
+
 /****************** search filter function ******************/
 let all_btn = document.getElementById('all');
 let cat_btn = document.getElementById('cat');

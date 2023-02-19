@@ -3,6 +3,7 @@
     background-image: url(../images/giving_up_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0 25%;
     max-width: 1920px;
     height: 750px;
     margin: 0 auto;
@@ -14,7 +15,7 @@
     color: #FEF8EA;
     /* font-weight: bold; */
     margin-left: 120px;
-    margin-top: 30px;
+    margin-top: 120px;
     line-height: 1.2;
     text-shadow: 0 1px 10px #000;
 }
@@ -94,7 +95,7 @@
 }
 
 /*-------------------- login_register --------------------*/
-.cover{
+.cover1{
     display: none;
     position: fixed; 
     z-index: 0; 
@@ -172,3 +173,69 @@
     transform: scale(1.1);
     transition: .5s;
 }
+
+
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+/*-------------------- RWD (428px) --------------------*/
+@media screen and (max-width: 428px){
+    /*-------------------- giving_up_banner --------------------*/
+    .giving_up_banner{
+        background-position: 44% 100%;
+        background-size: cover;
+        width: auto;
+        height: 600px;
+        padding-top: 50px;
+    }
+
+    .giving_up_banner h1{
+        margin-top: 0;
+        font-size: 46px;
+        margin-left: 30px;
+        line-height: 1.4;
+    }
+
+    .giving_up_banner h2{
+        font-size: 32px;
+        margin-left: 30px;
+        width: 160px;
+    }
+    /*-------------------- giving_up_announcement --------------------*/
+    .giving_up_announcement{
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        margin-top: 30px;
+        padding: 0 30px;
+        position: static;
+    }
+
+    .giving_up_announcement_content{
+        width: auto;
+        position: static;
+        transform: none;
+        background-color: #fff;
+        padding: 20px;
+    }
+    
+    .giving_up_announcement_content h2{
+        font-size: 24px;
+    }
+
+    .giving_up_announcement_content p{
+        text-align: justify;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -103,6 +103,11 @@ let send = document.getElementById('send');
 let body = document.querySelector('body');
 let check = document.getElementById('checkbox');
 let input_val = document.querySelectorAll('input');
+let input_text_val = document.querySelectorAll('input[type=text]');
+let input_num_val = document.querySelector('input[type=number]');
+let textarea_val = document.querySelectorAll('textarea');
+let select_val = document.querySelectorAll('select');
+let input_file_val = document.querySelector('input[type=file]');
 
 send.addEventListener('click', e => {
 
@@ -123,7 +128,7 @@ send.addEventListener('click', e => {
         body.style.overflow = 'hidden';
         setTimeout(function(){
             window.location.assign('../index.html')
-        }, 5000)
+        }, 5000);
         
         let countdown_el = document.getElementById('countdown');
         let timeleft = 5;
@@ -141,10 +146,31 @@ send.addEventListener('click', e => {
 
     if(isInvalid){
         alert('請將資料填妥！');
+        for(let i = 0; i < input_text_val.length; i++){
+            if(input_text_val[i].value == ''){
+                input_text_val[i].style.cssText = 'border-bottom: 2px solid red;';
+            };
+        };
+        if(input_num_val.value == ''){
+            input_num_val.style.cssText = 'border-bottom: 2px solid red;';
+        }
+        for(let i = 0; i < textarea_val.length; i++){
+            if(textarea_val[0].value == ''){
+                textarea_val[0].style.cssText = 'border: 1px solid red;';
+            };
+        };
+        for(let i = 0; i < select_val.length; i++){
+            if(select_val[i].selectedIndex == ''){
+                select_val[i].style.cssText = 'border: 1px solid red;';
+            };
+        };
+        if(input_file_val.files.length == 0){
+            input_file_val.style.color = 'red';
+        }
     };
 
     if(check.checked == false){
-        alert('請詳閱刊登條款後打勾！')
+        alert('請詳閱刊登條款後打勾！');
     };
 
 });

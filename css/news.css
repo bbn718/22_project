@@ -163,11 +163,12 @@ article:hover{
 
     .news_title ul{
         padding: 0 20px;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .news_title li{
         font-size: 15px;
+        padding: 0 10px;
     }
 
     /****************** article ******************/
