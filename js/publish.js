@@ -3,7 +3,7 @@ $(`input[type="text"]`).focus(function(){
     $(this).attr('placeholder', '')
     if($(this).css({borderBottom: '2px solid red',})){
         $(this).attr('style', '');
-    }
+    };
 }).blur(function(){
     if($(this).val() == ''){
         $(this).attr('placeholder','請輸入')
